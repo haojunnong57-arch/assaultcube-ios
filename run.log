@@ -1,4 +1,4 @@
-=== run 43753726376 Sun Nov 15 19:40:29 UTC 2026 ===
+=== run 43755000195 Sun Nov 15 19:54:17 UTC 2026 ===
 ========== STEP: Toolchain ==========
 Xcode 26.6
 Build version 17F113
@@ -6,8 +6,1012 @@ Build version 17F113
 EXIT_CODE=0
 ========== STEP: Engine ==========
 Cloning into 'upstream'...
-sed: 1: "s|#define MOD_KEYS_CTRL ...": bad flag in substitute command: '#'
+upstream/source/src/stream.cpp:23:    getenv("AC_BASE_DIR");
+upstream/source/src/main.cpp:1060:#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")
+upstream/source/src/platform.h:61:        #define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)
+[CXX] crypto
+[CXX] audiomanager
+[CXX] autodownload
+[CXX] client
+In file included from upstream/source/src/audiomanager.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/crypto.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/client.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/autodownload.cpp:4:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/audiomanager.cpp:36:8: warning: 'alcIsExtensionPresent' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   36 |     if(alcIsExtensionPresent(NULL, "ALC_ENUMERATION_EXT"))
+      |        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:227:38: note: 'alcIsExtensionPresent' has been explicitly marked deprecated here
+  227 | ALC_API ALCboolean      ALC_APIENTRY alcIsExtensionPresent( ALCdevice *device, const ALCchar *extname ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:38:34: warning: 'alcGetString' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   38 |         const ALCchar *devices = alcGetString(NULL, ALC_DEVICE_SPECIFIER);
+      |                                  ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:237:38: note: 'alcGetString' has been explicitly marked deprecated here
+  237 | ALC_API const ALCchar * ALC_APIENTRY alcGetString( ALCdevice *device, ALCenum param ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:56:14: warning: 'alcOpenDevice' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   56 |     device = alcOpenDevice(devicename && devicename[0] ? devicename : NULL);
+      |              ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:210:38: note: 'alcOpenDevice' has been explicitly marked deprecated here
+  210 | ALC_API ALCdevice *     ALC_APIENTRY alcOpenDevice( const ALCchar *devicename ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:60:19: warning: 'alcCreateContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   60 |         context = alcCreateContext(device, NULL);
+      |                   ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:192:38: note: 'alcCreateContext' has been explicitly marked deprecated here
+  192 | ALC_API ALCcontext *    ALC_APIENTRY alcCreateContext( ALCdevice *device, const ALCint* attrlist ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:63:13: warning: 'alcMakeContextCurrent' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   63 |             alcMakeContextCurrent(context);
+      |             ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:194:38: note: 'alcMakeContextCurrent' has been explicitly marked deprecated here
+  194 | ALC_API ALCboolean      ALC_APIENTRY alcMakeContextCurrent( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:65:13: warning: 'alDistanceModel' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   65 |             alDistanceModel(AL_INVERSE_DISTANCE_CLAMPED);
+      |             ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:642:25: note: 'alDistanceModel' has been explicitly marked deprecated here
+  642 | AL_API void AL_APIENTRY alDistanceModel( ALenum distanceModel ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/audiomanager.cpp:68:44: warning: 'alcGetString' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   68 |             conoutf("Sound: %s / %s (%s)", alcGetString(device, ALC_DEVICE_SPECIFIER), alGetString(AL_RENDERER), alGetString(AL_VENDOR));
+      |                                            ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:237:38: note: 'alcGetString' has been explicitly marked deprecated here
+  237 | ALC_API const ALCchar * ALC_APIENTRY alcGetString( ALCdevice *device, ALCenum param ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:68:88: warning: 'alGetString' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   68 |             conoutf("Sound: %s / %s (%s)", alcGetString(device, ALC_DEVICE_SPECIFIER), alGetString(AL_RENDERER), alGetString(AL_VENDOR));
+      |                                                                                        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:381:34: note: 'alGetString' has been explicitly marked deprecated here
+  381 | AL_API const ALchar* AL_APIENTRY alGetString( ALenum param ) OPENAL_DEPRECATED;
+      |                                  ^
+upstream/source/src/audiomanager.cpp:68:114: warning: 'alGetString' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   68 |             conoutf("Sound: %s / %s (%s)", alcGetString(device, ALC_DEVICE_SPECIFIER), alGetString(AL_RENDERER), alGetString(AL_VENDOR));
+      |                                                                                                                  ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:381:34: note: 'alGetString' has been explicitly marked deprecated here
+  381 | AL_API const ALchar* AL_APIENTRY alGetString( ALenum param ) OPENAL_DEPRECATED;
+      |                                  ^
+upstream/source/src/audiomanager.cpp:69:35: warning: 'alGetString' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   69 |             conoutf("Driver: %s", alGetString(AL_VERSION));
+      |                                   ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:381:34: note: 'alGetString' has been explicitly marked deprecated here
+  381 | AL_API const ALchar* AL_APIENTRY alGetString( ALenum param ) OPENAL_DEPRECATED;
+      |                                  ^
+upstream/source/src/audiomanager.cpp:86:21: warning: 'alcDestroyContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   86 |         if(context) alcDestroyContext(context);
+      |                     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:200:38: note: 'alcDestroyContext' has been explicitly marked deprecated here
+  200 | ALC_API void            ALC_APIENTRY alcDestroyContext( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:87:20: warning: 'alcCloseDevice' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   87 |         if(device) alcCloseDevice(device);
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:212:38: note: 'alcCloseDevice' has been explicitly marked deprecated here
+  212 | ALC_API ALCboolean      ALC_APIENTRY alcCloseDevice( ALCdevice *device ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:191:9: warning: 'alListenerf' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  191 |         alListenerf(AL_GAIN, vol/255.0f);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:435:25: note: 'alListenerf' has been explicitly marked deprecated here
+  435 | AL_API void AL_APIENTRY alListenerf( ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/audiomanager.cpp:289:5: warning: 'alcMakeContextCurrent' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  289 |     alcMakeContextCurrent(NULL);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:194:38: note: 'alcMakeContextCurrent' has been explicitly marked deprecated here
+  194 | ALC_API ALCboolean      ALC_APIENTRY alcMakeContextCurrent( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:290:17: warning: 'alcDestroyContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  290 |     if(context) alcDestroyContext(context);
+      |                 ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:200:38: note: 'alcDestroyContext' has been explicitly marked deprecated here
+  200 | ALC_API void            ALC_APIENTRY alcDestroyContext( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:291:16: warning: 'alcCloseDevice' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  291 |     if(device) alcCloseDevice(device);
+      |                ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:212:38: note: 'alcCloseDevice' has been explicitly marked deprecated here
+  212 | ALC_API ALCboolean      ALC_APIENTRY alcCloseDevice( ALCdevice *device ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:585:5: warning: 'alcSuspendContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  585 |     alcSuspendContext(context); // don't process sounds while we mess around
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:198:38: note: 'alcSuspendContext' has been explicitly marked deprecated here
+  198 | ALC_API void            ALC_APIENTRY alcSuspendContext( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/audiomanager.cpp:684:5: warning: 'alListenerfv' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  684 |     alListenerfv(AL_ORIENTATION, (ALfloat *) &o);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:439:25: note: 'alListenerfv' has been explicitly marked deprecated here
+  439 | AL_API void AL_APIENTRY alListenerfv( ALenum param, const ALfloat* values ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/audiomanager.cpp:685:5: warning: 'alListenerfv' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  685 |     alListenerfv(AL_POSITION, (ALfloat *) &camera1->o);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:439:25: note: 'alListenerfv' has been explicitly marked deprecated here
+  439 | AL_API void AL_APIENTRY alListenerfv( ALenum param, const ALfloat* values ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/audiomanager.cpp:687:5: warning: 'alcProcessContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  687 |     alcProcessContext(context);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:196:38: note: 'alcProcessContext' has been explicitly marked deprecated here
+  196 | ALC_API void            ALC_APIENTRY alcProcessContext( ALCcontext *context ) OPENAL_DEPRECATED;
+      |                                      ^
+upstream/source/src/crypto.cpp:1280:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1280 |     sprintf(signedmsg, "%s%s\n", certheader, bin2hex(hextemp, msgbuf, 64));   // header line
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+1 warning generated.
+21 warnings generated.
+2 warnings generated.
+[CXX] clientgame
+[CXX] clients2c
+[CXX] command
+[CXX] console
+In file included from upstream/source/src/clients2c.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/clientgame.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/command.cpp:4:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/clients2c.cpp:1272:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1272 |                         itoa(a1, mode);
+      |                         ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clients2c.cpp:1280:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1280 |                         itoa(a1, getint(p));
+      |                         ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clients2c.cpp:1299:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1299 |                         itoa(a1, getint(p));
+      |                         ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clients2c.cpp:1300:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1300 |                         itoa(a2, getint(p));
+      |                         ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clients2c.cpp:1304:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1304 |                         itoa(a1, getint(p));
+      |                         ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/command.cpp:394:34: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  394 |         case ID_VAR: { string t; itoa(t, *id->storage.i); return exchangestr(n, t); }
+      |                                  ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/command.cpp:455:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  455 |     itoa(t, v);
+      |     ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/command.cpp:1044:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1044 |             itoa(id->action, i+1);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clientgame.cpp:1629:29: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1629 |             string nm = ""; itoa(nm, nextmode);
+      |                             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from upstream/source/src/console.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/command.cpp:1365:38: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1365 |         case ID_SVAR:  { string str; itoa(str, val); *id->storage.s = exchangestr(*id->storage.s, str); break; }
+      |                                      ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/command.cpp:1366:38: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1366 |         case ID_ALIAS: { string str; itoa(str, val); alias(name, str); return; }
+      |                                      ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+6 warnings generated.
+2 warnings generated.
+6 warnings generated.
+[CXX] docs
+[CXX] editing
+[CXX] entities
+[CXX] http
+In file included from upstream/source/src/editing.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/docs.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/entities.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/http.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+[CXX] log
+[CXX] main
+[CXX] menus
+[CXX] touch/touch
+In file included from upstream/source/src/main.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/touch/touch.cpp:7:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/log.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/touch/touch.cpp:51:
+upstream/source/src/touch/core/game.h:111:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  111 |             itoa(nextmode, config.PLAYOFFLINE_GAMEMODE);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from upstream/source/src/touch/touch.cpp:51:
+upstream/source/src/touch/core/game.h:113:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  113 |             itoa(nexttimelimit, config.PLAYOFFLINE_TIMELIMIT);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from upstream/source/src/touch/touch.cpp:62:
+upstream/source/src/touch/core/sliderview.h:64:131: warning warning:  generated.
+'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   64 |             itoa(value, currentval);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from upstream/source/src/touch/touch.cpp:72:
+upstream/source/src/touch/mainscene/serverscene.h:392:25: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'serverinfo' [-Wnontrivial-memcall]
+  392 |             else memset(&selectedserver, 0, sizeof(serverinfo));
+      |                         ^
+upstream/source/src/touch/mainscene/serverscene.h:392:25: note: explicitly cast the pointer to silence this warning
+  392 |             else memset(&selectedserver, 0, sizeof(serverinfo));
+      |                         ^
+      |                         (void*)
+In file included from upstream/source/src/menus.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/touch/touch.cpp:76:
+upstream/source/src/touch/gamescene/settingsscene.h:26:19: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   26 |         onoff.add("OFF");
+      |                   ^
+upstream/source/src/touch/gamescene/settingsscene.h:27:19: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   27 |         onoff.add("ON");
+      |                   ^
+upstream/source/src/touch/gamescene/settingsscene.h:32:26: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   32 |         jumpcontrols.add("SWIPE");
+      |                          ^
+upstream/source/src/touch/gamescene/settingsscene.h:33:26: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   33 |         jumpcontrols.add("JUMP BUTTON");
+      |                          ^
+upstream/source/src/touch/gamescene/settingsscene.h:38:28: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   38 |         attackcontrols.add("DOUBLE TAP");
+      |                            ^
+upstream/source/src/touch/gamescene/settingsscene.h:39:28: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   39 |         attackcontrols.add("VOLUME-UP KEY");
+      |                            ^
+upstream/source/src/touch/gamescene/settingsscene.h:40:28: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
+   40 |         attackcontrols.add("ATTACK BUTTON");
+      |                            ^
+upstream/source/src/menus.cpp:576:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  576 |             itoa(v, value);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/menus.cpp:593:14: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  593 |         else itoa(curval, value); // display number only
+      |              ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+3 warnings generated.
+12 warnings generated.
+[CXX] oggstream
+[CXX] openal
+[CXX] packetqueue
+[CXX] physics
+In file included from upstream/source/src/oggstream.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/openal.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/oggstream.cpp:62:5: warning: 'alGenBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   62 |     alGenBuffers(2, bufferids);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:591:25: note: 'alGenBuffers' has been explicitly marked deprecated here
+  591 | AL_API void AL_APIENTRY alGenBuffers( ALsizei n, ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:72:8: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   72 |     if(alIsBuffer(bufferids[0]) || alIsBuffer(bufferids[1]))
+      |        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
+  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/oggstream.cpp:72:36: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   72 |     if(alIsBuffer(bufferids[0]) || alIsBuffer(bufferids[1]))
+      |                                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
+  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/oggstream.cpp:75:9: warning: 'alDeleteBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   75 |         alDeleteBuffers(2, bufferids);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:594:25: note: 'alDeleteBuffers' has been explicitly marked deprecated here
+  594 | AL_API void AL_APIENTRY alDeleteBuffers( ALsizei n, const ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:174:9: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  174 |         alBufferData(bufid, format, pcm, size, info->rate);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
+  600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:189:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  189 |     alGetSourcei(src->id, AL_BUFFERS_PROCESSED, &processed);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
+  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:193:9: warning: 'alSourceUnqueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  193 |         alSourceUnqueueBuffers(src->id, 1, &buffer);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:573:25: note: 'alSourceUnqueueBuffers' has been explicitly marked deprecated here
+  573 | AL_API void AL_APIENTRY alSourceUnqueueBuffers( ALuint sid, ALsizei numEntries, ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:195:20: warning: 'alSourceQueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  195 |         if(active) alSourceQueueBuffers(src->id, 1, &buffer);
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:571:25: note: 'alSourceQueueBuffers' has been explicitly marked deprecated here
+  571 | AL_API void AL_APIENTRY alSourceQueueBuffers( ALuint sid, ALsizei numEntries, const ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:15:22: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   15 |     ASSERT(!valid || alIsSource(id));
+      |                      ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:503:30: note: 'alIsSource' has been explicitly marked deprecated here
+  503 | AL_API ALboolean AL_APIENTRY alIsSource( ALuint sid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/openal.cpp:40:12: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   40 |     ASSERT(alIsSource(id));
+      |            ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:503:30: note: 'alIsSource' has been explicitly marked deprecated here
+  503 | AL_API ALboolean AL_APIENTRY alIsSource( ALuint sid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/openal.cpp:59:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   59 |     alSourcef(id, AL_REFERENCE_DISTANCE, al_referencedistance/100.0f);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:60:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   60 |     alSourcef(id, AL_ROLLOFF_FACTOR, al_rollofffactor/100.0f);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:82:5: warning: 'alGenSources' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   82 |     alGenSources(1, &id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:497:25: note: 'alGenSources' has been explicitly marked deprecated here
+  497 | AL_API void AL_APIENTRY alGenSources( ALsizei n, ALuint* sources ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:90:5: warning: 'alDeleteSources' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   90 |     alDeleteSources(1, &id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:500:25: note: 'alDeleteSources' has been explicitly marked deprecated here
+  500 | AL_API void AL_APIENTRY alDeleteSources( ALsizei n, const ALuint* sources ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:100:9: warning: 'alSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  100 |         alSourcei(id, AL_BUFFER, buf_id);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:514:25: note: 'alSourcei' has been explicitly marked deprecated here
+  514 | AL_API void AL_APIENTRY alSourcei( ALuint sid, ALenum param, ALint value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:108:5: warning: 'alSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  108 |     alSourcei(id, AL_LOOPING, enable ? 1 : 0);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:514:25: note: 'alSourcei' has been explicitly marked deprecated here
+  514 | AL_API void AL_APIENTRY alSourcei( ALuint sid, ALenum param, ALint value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:115:5: warning: 'alSourceQueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  115 |     alSourceQueueBuffers(id, n, buffer_ids);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:571:25: note: 'alSourceQueueBuffers' has been explicitly marked deprecated here
+  571 | AL_API void AL_APIENTRY alSourceQueueBuffers( ALuint sid, ALsizei numEntries, const ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:123:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  123 |     alGetSourcei(id, AL_BUFFERS_QUEUED, &queued);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
+  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:128:9: warning: 'alSourceUnqueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  128 |         alSourceUnqueueBuffers(id, 1, &buffer);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:573:25: note: 'alSourceUnqueueBuffers' has been explicitly marked deprecated here
+  573 | AL_API void AL_APIENTRY alSourceUnqueueBuffers( ALuint sid, ALsizei numEntries, ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:136:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  136 |     alSourcef(id, AL_GAIN, g);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:143:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  143 |     alSourcef(id, AL_PITCH, p);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:155:5: warning: 'alSource3f' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  155 |     alSource3f(id, AL_POSITION, x, y, z);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:510:25: note: 'alSource3f' has been explicitly marked deprecated here
+  510 | AL_API void AL_APIENTRY alSource3f( ALuint sid, ALenum param, ALfloat value1, ALfloat value2, ALfloat value3 ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:157:58: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  157 |     return !ALERRF("id %u, %d, x: %f, y: %f, z: %f", id, alIsSource(id) == AL_TRUE ? 1 : 0,  x, y, z);
+      |                                                          ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:503:30: note: 'alIsSource' has been explicitly marked deprecated here
+  503 | AL_API ALboolean AL_APIENTRY alIsSource( ALuint sid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/openal.cpp:164:5: warning: 'alSource3f' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  164 |     alSource3f(id, AL_VELOCITY, x, y, z);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:510:25: note: 'alSource3f' has been explicitly marked deprecated here
+  510 | AL_API void AL_APIENTRY alSource3f( ALuint sid, ALenum param, ALfloat value1, ALfloat value2, ALfloat value3 ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:172:5: warning: 'alGetSourcefv' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  172 |     alGetSourcefv(id, AL_POSITION, v);
+      |     ^
+9 warnings generated.
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:527:25: note: 'alGetSourcefv' has been explicitly marked deprecated here
+  527 | AL_API void AL_APIENTRY alGetSourcefv( ALuint sid, ALenum param, ALfloat* values ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:180:5: warning: 'alSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  180 |     alSourcei(id, AL_SOURCE_RELATIVE, enable ? AL_TRUE : AL_FALSE);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:514:25: note: 'alSourcei' has been explicitly marked deprecated here
+  514 | AL_API void AL_APIENTRY alSourcei( ALuint sid, ALenum param, ALint value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:187:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  187 |     alGetSourcei(id, AL_SOURCE_STATE, &s);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
+  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:194:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  194 |     alSourcef(id, AL_SEC_OFFSET, secs);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:204:5: warning: 'alGetSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  204 |     alGetSourcef(id, AL_SEC_OFFSET, &s);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:523:25: note: 'alGetSourcef' has been explicitly marked deprecated here
+  523 | AL_API void AL_APIENTRY alGetSourcef( ALuint sid, ALenum param, ALfloat* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:219:5: warning: 'alSourcePlay' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  219 |     alSourcePlay(id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:557:25: note: 'alSourcePlay' has been explicitly marked deprecated here
+  557 | AL_API void AL_APIENTRY alSourcePlay( ALuint sid ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:226:5: warning: 'alSourceStop' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  226 |     alSourceStop(id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:560:25: note: 'alSourceStop' has been explicitly marked deprecated here
+  560 | AL_API void AL_APIENTRY alSourceStop( ALuint sid ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:233:5: warning: 'alSourceRewind' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  233 |     alSourceRewind(id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:563:25: note: 'alSourceRewind' has been explicitly marked deprecated here
+  563 | AL_API void AL_APIENTRY alSourceRewind( ALuint sid ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:242:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  242 |     alGetSourcei(id, AL_SOURCE_TYPE, &s);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
+  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:264:5: warning: 'alGenBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  264 |     alGenBuffers(1, &id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:591:25: note: 'alGenBuffers' has been explicitly marked deprecated here
+  591 | AL_API void AL_APIENTRY alGenBuffers( ALsizei n, ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:295:21: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  295 |                     alBufferData(id, info->channels == 2 ? AL_FORMAT_STEREO16 : AL_FORMAT_MONO16, buf.getbuf(), buf.length(), info->rate);
+      |                     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
+  600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:334:17: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  334 |                 alBufferData(id, format, wavbuf, wavlen, wavspec.freq);
+      |                 ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
+  600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:357:8: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  357 |     if(alIsBuffer(id)) alDeleteBuffers(1, &id);
+      |        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
+  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/openal.cpp:357:24: warning: 'alDeleteBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  357 |     if(alIsBuffer(id)) alDeleteBuffers(1, &id);
+      |                        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:594:25: note: 'alDeleteBuffers' has been explicitly marked deprecated here
+  594 | AL_API void AL_APIENTRY alDeleteBuffers( ALsizei n, const ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/openal.cpp:383:5: warning: 'alGetError' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  383 |     alGetError();
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:404:27: note: 'alGetError' has been explicitly marked deprecated here
+  404 | AL_API ALenum AL_APIENTRY alGetError( void ) OPENAL_DEPRECATED;
+      |                           ^
+upstream/source/src/openal.cpp:388:17: warning: 'alGetError' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  388 |     ALenum er = alGetError();
+      |                 ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:404:27: note: 'alGetError' has been explicitly marked deprecated here
+  404 | AL_API ALenum AL_APIENTRY alGetError( void ) OPENAL_DEPRECATED;
+      |                           ^
+In file included from upstream/source/src/physics.cpp:6:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/packetqueue.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+1 warning generated.
+33 warnings generated.
+1 warning generated.
+[CXX] protocol
+[CXX] rendercubes
+[CXX] rendergl
+[CXX] renderhud
+In file included from upstream/source/src/rendercubes.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/protocol.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/renderhud.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendergl.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/rendergl.cpp:1129:10: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
+ 1129 |     if(!&mmi) return false;
+      |        ~ ^~~
+1 warning generated.
+1 warning generated.
+1 warning generated.
+2 warnings generated.
+[CXX] rendermodel
+[CXX] renderparticles
+[CXX] rendertext
+[CXX] rndmap
+In file included from upstream/source/src/rendertext.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendermodel.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/renderparticles.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rndmap.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendermodel.cpp:10:
+upstream/source/src/vertmodel.h:730:24: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'tag' [-Wnontrivial-memcall]
+  730 |                 memcpy(&ntags[(numtags + 1)*i], &tags[numtags*i], numtags*sizeof(tag));
+      |                        ^
+upstream/source/src/vertmodel.h:730:24: note: explicitly cast the pointer to silence this warning
+  730 |                 memcpy(&ntags[(numtags + 1)*i], &tags[numtags*i], numtags*sizeof(tag));
+      |                        ^
+      |                        (void*)
+1 warning generated.
+1 warning generated.
+1 warning generated.
+2 warnings generated.
+[CXX] scoreboard
+[CXX] serverms
+[CXX] server
+[CXX] serverbrowser
+In file included from upstream/source/src/serverms.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/scoreboard.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/server.cpp:4:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/serverbrowser.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/scoreboard.cpp:546:14: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  546 |         else itoa(winners, sort < 0 ? 0 : 1);
+      |              ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+2 warnings generated.
+1 warning generated.
+1 warning generated.
+[CXX] shadow
+[CXX] soundlocation
+[CXX] soundscheduler
+[CXX] stream
+In file included from upstream/source/src/soundlocation.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/shadow.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/stream.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/soundscheduler.cpp:5:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+1 warning generated.
+1 warning generated.
+upstream/source/src/stream.cpp:326:16: warning: 'readdir_r' is deprecated: This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead. [-Wdeprecated-declarations]
+  326 |         while(!readdir_r(d, &b, &de) && de != NULL)
+      |                ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/dirent.h:114:1: note: 'readdir_r' has been explicitly marked deprecated here
+  114 | __deprecated_msg("This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/stream.cpp:397:16: warning: 'readdir_r' is deprecated: This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead. [-Wdeprecated-declarations]
+  397 |         while(!readdir_r(d, &b, &de) && de != NULL)
+      |                ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/dirent.h:114:1: note: 'readdir_r' has been explicitly marked deprecated here
+  114 | __deprecated_msg("This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+3 warnings generated.
+[CXX] texture
+[CXX] tools
+[CXX] water
+[CXX] weapon
+In file included from upstream/source/src/texture.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/tools.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/water.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/weapon.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/weapon.cpp:1348:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1348 |     sprintf(gunstats, "%d", mag);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function 1i warnings generated .
+provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+2 warnings generated.
+1 warning generated.
+[CXX] wizard
+[CXX] world
+[CXX] worldio
+[CXX] worldlight
+In file included from upstream/source/src/wizard.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/world.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/wizard.cpp:184:5: error: 'system' is unavailable: not available on iOS
+  184 |     system(argstr.getbuf());
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdlib.h:208:6: note: 'system' has been explicitly marked unavailable here
+  208 | int      system(const char *) __DARWIN_ALIAS_C(system);
+      |          ^
+1 warning and 1 error generated.
 EXIT_CODE=1
 ========== STEP: Package ==========
 cp: AC: No such file or directory
 EXIT_CODE=1
+In file included from upstream/source/src/worldio.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/worldlight.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+1 warning generated.
+1 warning generated.
+1 warning generated.
