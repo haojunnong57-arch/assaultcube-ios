@@ -18,11 +18,11 @@ INC="-Istubs -Igl4es/include -Iprefix/include/SDL2 -Iprefix/include -I$AC/source
 CFLAGS="-D__ANDROID__ -O2"
 CXXFLAGS="-D__ANDROID__ -std=c++11 -fno-rtti -fno-exceptions -fsigned-char -fstack-protector -O2"
 
-# iOS data-path patches
-sed -i.bak 's|"/storage/emulated/0/Android/data/net.cubers.assaultcube/files/";|getenv("AC_BASE_DIR");|' "$AC/source/src/stream.cpp"
-sed -i.bak 's|#define DEFAULTPROFILEPATH "profile"|#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")|' "$AC/source/src/main.cpp"
+# iOS data-path patches (perl: macOS sed chokes on '|' inside s|||)
+perl -pi -e 's{\Q"/storage/emulated/0/Android/data/net.cubers.assaultcube/files/"\E}{getenv("AC_BASE_DIR")}' "$AC/source/src/stream.cpp"
+perl -pi -e 's{\Q#define DEFAULTPROFILEPATH "profile"\E}{#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")}' "$AC/source/src/main.cpp"
 # SDL >= 2.0.18 no longer ships KMOD_LMETA/KMOD_RMETA; use the GUI (Cmd) equivalents
-sed -i.bak 's|#define MOD_KEYS_CTRL (KMOD_LMETA|KMOD_RMETA)|#define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)|' "$AC/source/src/platform.h"
+perl -pi -e 's{\Q#define MOD_KEYS_CTRL (KMOD_LMETA|KMOD_RMETA)\E}{#define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)}' "$AC/source/src/platform.h"
 
 grep -n "AC_BASE_DIR\|AC_HOME_DIR\|KMOD_LGUI" "$AC/source/src/stream.cpp" "$AC/source/src/main.cpp" "$AC/source/src/platform.h" >> build.log 2>&1 || true
 
