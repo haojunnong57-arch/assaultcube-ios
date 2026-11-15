@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #define SDL_MAIN_HANDLED 1
 #include "SDL.h"
-#include "SDL_uikitappdelegate.h"
+#include "SDL_main.h"
 
 #ifdef __cplusplus
 extern "C" {
