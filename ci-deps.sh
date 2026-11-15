@@ -13,10 +13,11 @@ if [ ! -f prefix/lib/libSDL2.a ]; then
 fi
 
 if [ ! -f gl4es/lib/libGL.a ]; then
-  echo "== GL4ES (static)"
+  echo "== GL4ES (static, iOS: NOX11+NOEGL+NO_LOADER like Android)"
   [ -d gl4es ] || git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
   sed -i '' 's|#ifdef __GNUC__|#if defined(__GNUC__) \&\& !defined(__APPLE__)|' gl4es/src/gl/attributes.h
-  $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release -DSTATICLIB=ON
+  $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release \
+    -DSTATICLIB=ON -DNOX11=ON -DNOEGL=ON -DNO_LOADER=ON -DDEFAULT_ES=2
   cmake --build gl4es-build --config Release -- -sdk iphoneos
   mkdir -p gl4es/lib
   GA=$(find gl4es -name "libGL.a" | head -1)
