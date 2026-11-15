@@ -32,8 +32,7 @@ jobs:
             gl4es
           key: iosdeps-v3
 
-      - name: Build deps (cache miss only)
-        if: steps.cache.outputs.cache-hit != 'true'
+      - name: Build deps (idempotent, skips present libs)
         run: bash ci-step.sh "Deps" bash ci-deps.sh
 
       - name: Compile engine
