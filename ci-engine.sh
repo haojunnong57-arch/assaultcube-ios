@@ -21,8 +21,10 @@ CXXFLAGS="-D__ANDROID__ -std=c++11 -fno-rtti -fno-exceptions -fsigned-char -fsta
 # iOS data-path patches
 sed -i.bak 's|"/storage/emulated/0/Android/data/net.cubers.assaultcube/files/";|getenv("AC_BASE_DIR");|' "$AC/source/src/stream.cpp"
 sed -i.bak 's|#define DEFAULTPROFILEPATH "profile"|#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")|' "$AC/source/src/main.cpp"
+# SDL >= 2.0.18 no longer ships KMOD_LMETA/KMOD_RMETA; use the GUI (Cmd) equivalents
+sed -i.bak 's|#define MOD_KEYS_CTRL (KMOD_LMETA|KMOD_RMETA)|#define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)|' "$AC/source/src/platform.h"
 
-grep -n "AC_BASE_DIR\|AC_HOME_DIR" "$AC/source/src/stream.cpp" "$AC/source/src/main.cpp" >> build.log 2>&1 || true
+grep -n "AC_BASE_DIR\|AC_HOME_DIR\|KMOD_LGUI" "$AC/source/src/stream.cpp" "$AC/source/src/main.cpp" "$AC/source/src/platform.h" >> build.log 2>&1 || true
 
 mkdir -p objs
 
