@@ -6,7 +6,7 @@ CM="cmake -G Xcode -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMA
 
 if [ ! -f prefix/lib/libSDL2.a ]; then
   echo "== SDL2"
-  git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL.git sdl
+  [ -d sdl ] || git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL.git sdl
   $CM -S sdl -B sdl-build -DCMAKE_INSTALL_PREFIX=$PWD/prefix -DSDL_SHARED=OFF -DSDL_STATIC=ON -DSDL_TEST=OFF -DSDL_TESTS=OFF
   cmake --build sdl-build --config Release -- -sdk iphoneos
   cmake --install sdl-build --config Release
@@ -14,18 +14,19 @@ fi
 
 if [ ! -f gl4es/lib/libGL.a ]; then
   echo "== GL4ES (static)"
-  git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
+  [ -d gl4es ] || git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
   sed -i '' 's|#ifdef __GNUC__|#if defined(__GNUC__) \&\& !defined(__APPLE__)|' gl4es/src/gl/attributes.h
   $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release -DSTATICLIB=ON
   cmake --build gl4es-build --config Release -- -sdk iphoneos
   mkdir -p gl4es/lib
-  find gl4es-build -name "libGL.a" | head -1 | xargs -I{} cp {} gl4es/lib/libGL.a
+  GA=$(find gl4es -name "libGL.a" | head -1)
+  [ -n "$GA" ] && cp "$GA" gl4es/lib/libGL.a
   ls -lh gl4es/lib/libGL.a
 fi
 
 if [ ! -f prefix/lib/libSDL2_image.a ]; then
   echo "== SDL2_image"
-  git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL_image.git sdl_image
+  [ -d sdl_image ] || git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL_image.git sdl_image
   $CM -S sdl_image -B simg-build -DCMAKE_INSTALL_PREFIX=$PWD/prefix -DCMAKE_PREFIX_PATH=$PWD/prefix \
     -DSDL2_INCLUDE_DIR=$PWD/prefix/include/SDL2 -DSDL2_LIBRARY=$PWD/prefix/lib/libSDL2.a \
     -DBUILD_SHARED_LIBS=OFF -DSDL2IMAGE_VENDORED=ON -DSDL2IMAGE_TIF=OFF -DSDL2IMAGE_WEBP=OFF -DSDL2IMAGE_AVIF=OFF -DSDL2IMAGE_JXL=OFF
@@ -35,7 +36,7 @@ fi
 
 if [ ! -f prefix/lib/libogg.a ]; then
   echo "== libogg"
-  git clone --depth 1 https://github.com/xiph/ogg.git ogg
+  [ -d ogg ] || git clone --depth 1 https://github.com/xiph/ogg.git ogg
   $CM -S ogg -B ogg-build -DCMAKE_INSTALL_PREFIX=$PWD/prefix -DBUILD_SHARED_LIBS=OFF -DINSTALL_DOCS=OFF
   cmake --build ogg-build --config Release -- -sdk iphoneos
   cmake --install ogg-build --config Release
@@ -43,7 +44,7 @@ fi
 
 if [ ! -f prefix/lib/libvorbisfile.a ]; then
   echo "== libvorbis"
-  git clone --depth 1 https://github.com/xiph/vorbis.git vorbis
+  [ -d vorbis ] || git clone --depth 1 https://github.com/xiph/vorbis.git vorbis
   $CM -S vorbis -B vorbis-build -DCMAKE_INSTALL_PREFIX=$PWD/prefix -DCMAKE_PREFIX_PATH=$PWD/prefix \
     -DOGG_INCLUDE_DIR=$PWD/prefix/include -DOGG_LIBRARY=$PWD/prefix/lib/libogg.a -DBUILD_SHARED_LIBS=OFF
   cmake --build vorbis-build --config Release -- -sdk iphoneos
@@ -52,7 +53,7 @@ fi
 
 if [ ! -f prefix/lib/libopenal.a ]; then
   echo "== OpenAL-Soft"
-  git clone --depth 1 https://github.com/kcat/openal-soft.git openal-soft
+  [ -d openal-soft ] || git clone --depth 1 https://github.com/kcat/openal-soft.git openal-soft
   $CM -S openal-soft -B oal-build -DCMAKE_INSTALL_PREFIX=$PWD/prefix -DLIBTYPE=STATIC -DALSOFT_EXAMPLES=OFF -DALSOFT_TESTS=OFF -DALSOFT_UTILS=OFF
   cmake --build oal-build --config Release -- -sdk iphoneos
   cmake --install oal-build --config Release

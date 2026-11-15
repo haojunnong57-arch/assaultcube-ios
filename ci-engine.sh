@@ -57,7 +57,7 @@ $CXX -x objective-c++ -fobjc-arc -arch arm64 -isysroot $SDK -mios-version-min=$I
 echo "[LINK] AC" >> build.log
 $CXX objs/*.o -o AC \
   -Lprefix/lib -lSDL2 -lSDL2_image -lopenal -logg -lvorbis -lvorbisfile \
-  -Lgl4es/lib/Release -lGL -Wl,-rpath,@executable_path/Frameworks \
+  -Lgl4es/lib -Lgl4es/lib/Release -lGL \
   -lz -lsqlite3 -liconv \
   -framework UIKit -framework OpenGLES -framework QuartzCore -framework CoreAudio \
   -framework AudioToolbox -framework AVFoundation -framework CoreMotion -framework GameController \
