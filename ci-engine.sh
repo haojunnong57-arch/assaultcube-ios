@@ -31,7 +31,7 @@ SRCS="crypto audiomanager autodownload client clientgame clients2c command conso
 pids=""
 for f in $SRCS; do
   o="objs/$(echo "$f" | tr '/' '_').o"
-  ( echo "[CXX] $f" >> build.log; $CXX $CXXFLAGS $INC -c "$AC/source/src/$f" -o "$o" >> build.log 2>&1 ) &
+  ( echo "[CXX] $f" >> build.log; $CXX $CXXFLAGS $INC -c "$AC/source/src/$f.cpp" -o "$o" >> build.log 2>&1 ) &
   pids="$pids $!"
   if [ $(echo $pids | wc -w) -ge 4 ]; then
     for p in $pids; do wait $p || exit 1; done
