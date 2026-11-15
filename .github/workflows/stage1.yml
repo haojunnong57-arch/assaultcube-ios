@@ -5,48 +5,69 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+env:
+  IOS_MIN: "17.0"
+
 jobs:
   stage1:
     runs-on: macos-26
-    env:
-      IOS_MIN: "17.0"
     steps:
       - uses: actions/checkout@v4
 
-      - name: Toolchain
+      - name: Init log
         run: |
-          xcodebuild -version
-          xcrun --sdk iphoneos --show-sdk-version
-          clang --version
+          echo "=== run $GITHUB_RUN_ID $(date -u) ===" > build.log
+          chmod +x ci-step.sh
+          bash ci-step.sh "Toolchain" bash -c 'xcodebuild -version; xcrun --sdk iphoneos --show-sdk-version; clang --version'
 
       - name: Clone SDL2
-        run: git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL.git sdl
+        run: bash ci-step.sh "Clone SDL2" git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL.git sdl
 
-      - name: Build SDL2 static for iOS
-        run: |
-          cmake -S sdl -B sdl-build -G Xcode \
-            -DCMAKE_SYSTEM_NAME=iOS \
-            -DCMAKE_OSX_ARCHITECTURES=arm64 \
-            -DCMAKE_OSX_DEPLOYMENT_TARGET=$IOS_MIN \
-            -DSDL_SHARED=OFF -DSDL_STATIC=ON -DSDL_TEST=OFF -DSDL_TESTS=OFF
-          cmake --build sdl-build --config Release -- -sdk iphoneos
-          echo '--- static libs ---'
-          find sdl-build -name '*.a' -exec ls -lh {} \;
+      - name: Configure SDL2 (iOS arm64)
+        run: >
+          bash ci-step.sh "Configure SDL2" cmake -S sdl -B sdl-build -G Xcode
+          -DCMAKE_SYSTEM_NAME=iOS
+          -DCMAKE_OSX_ARCHITECTURES=arm64
+          -DCMAKE_OSX_DEPLOYMENT_TARGET=${IOS_MIN}
+          -DSDL_SHARED=OFF -DSDL_STATIC=ON -DSDL_TEST=OFF -DSDL_TESTS=OFF
+
+      - name: Build SDL2
+        run: bash ci-step.sh "Build SDL2" cmake --build sdl-build --config Release -- -sdk iphoneos
 
       - name: Clone GL4ES
-        run: git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
+        run: bash ci-step.sh "Clone GL4ES" git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
 
-      - name: Build GL4ES static for iOS
-        run: |
-          cmake -S gl4es -B gl4es-build -G Xcode \
-            -DCMAKE_SYSTEM_NAME=iOS \
-            -DCMAKE_OSX_ARCHITECTURES=arm64 \
-            -DCMAKE_OSX_DEPLOYMENT_TARGET=$IOS_MIN \
-            -DCMAKE_BUILD_TYPE=Release
-          cmake --build gl4es-build --config Release -- -sdk iphoneos
-          echo '--- static libs ---'
-          find gl4es-build -name '*.a' -exec ls -lh {} \;
+      - name: Configure GL4ES (iOS arm64)
+        run: >
+          bash ci-step.sh "Configure GL4ES" cmake -S gl4es -B gl4es-build -G Xcode
+          -DCMAKE_SYSTEM_NAME=iOS
+          -DCMAKE_OSX_ARCHITECTURES=arm64
+          -DCMAKE_OSX_DEPLOYMENT_TARGET=${IOS_MIN}
+          -DCMAKE_BUILD_TYPE=Release
 
-      - name: Summarize
+      - name: Build GL4ES
+        run: bash ci-step.sh "Build GL4ES" cmake --build gl4es-build --config Release -- -sdk iphoneos
+
+      - name: List artifacts
+        run: bash ci-step.sh "Artifacts" bash -c 'find . -name "*.a" -exec ls -lh {} \; | head -40'
+
+      - name: Upload log to build-logs branch
         if: always()
-        run: echo 'Stage1 finished (see logs above for build result).'
+        run: |
+          git config user.name ci-bot
+          git config user.email ci-bot@users.noreply.github.com
+          git fetch origin build-logs || true
+          if git rev-parse --verify origin/build-logs >/dev/null 2>&1; then
+            git checkout build-logs
+            git reset --hard origin/build-logs
+          else
+            git checkout --orphan build-logs
+          fi
+          git rm -r -f --ignore-unmatch . 2>/dev/null || true
+          cp build.log run.log
+          git add -f run.log
+          git commit -m "run $GITHUB_RUN_NUMBER" --allow-empty
+          git push origin build-logs --force
