@@ -1,4 +1,4 @@
-=== run 43756101375 Sun Nov 15 20:05:59 UTC 2026 ===
+=== run 43757250203 Sun Nov 15 20:17:48 UTC 2026 ===
 ========== STEP: Toolchain ==========
 Xcode 26.6
 Build version 17F113
@@ -6,7 +6,7 @@ Build version 17F113
 EXIT_CODE=0
 ========== STEP: Engine ==========
 Cloning into 'upstream'...
-Updating files:  84% (2078/2450)Updating files:  85% (2083/2450)Updating files:  86% (2107/2450)Updating files:  87% (2132/2450)Updating files:  88% (2156/2450)Updating files:  89% (2181/2450)Updating files:  90% (2205/2450)Updating files:  91% (2230/2450)Updating files:  92% (2254/2450)Updating files:  93% (2279/2450)Updating files:  94% (2303/2450)Updating files:  95% (2328/2450)Updating files:  96% (2352/2450)Updating files:  97% (2377/2450)Updating files:  98% (2401/2450)Updating files:  99% (2426/2450)Updating files: 100% (2450/2450)Updating files: 100% (2450/2450), done.
+Updating files:  74% (1835/2450)Updating files:  75% (1838/2450)Updating files:  76% (1862/2450)Updating files:  77% (1887/2450)Updating files:  78% (1911/2450)Updating files:  79% (1936/2450)Updating files:  80% (1960/2450)Updating files:  81% (1985/2450)Updating files:  82% (2009/2450)Updating files:  83% (2034/2450)Updating files:  84% (2058/2450)Updating files:  85% (2083/2450)Updating files:  86% (2107/2450)Updating files:  87% (2132/2450)Updating files:  88% (2156/2450)Updating files:  89% (2181/2450)Updating files:  90% (2205/2450)Updating files:  91% (2230/2450)Updating files:  92% (2254/2450)Updating files:  93% (2279/2450)Updating files:  94% (2303/2450)Updating files:  95% (2328/2450)Updating files:  96% (2352/2450)Updating files:  97% (2377/2450)Updating files:  98% (2401/2450)Updating files:  99% (2426/2450)Updating files: 100% (2450/2450)Updating files: 100% (2450/2450), done.
 upstream/source/src/stream.cpp:23:    getenv("AC_BASE_DIR");
 upstream/source/src/main.cpp:1060:#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")
 upstream/source/src/platform.h:61:        #define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)
@@ -15,25 +15,25 @@ upstream/source/src/wizard.cpp:184:    printf("(iOS: wizard server launch not su
 [CXX] audiomanager
 [CXX] autodownload
 [CXX] client
-In file included from upstream/source/src/client.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/autodownload.cpp:4:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/audiomanager.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/client.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/crypto.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/autodownload.cpp:4:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -182,24 +182,42 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/command.cpp:4:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/clientgame.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/console.cpp:3:
+In file included from upstream/source/src/command.cpp:4:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+upstream/source/src/command.cpp:394:34: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  394 |         case ID_VAR: { string t; itoa(t, *id->storage.i); return exchangestr(n, t); }
+      |                                  ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/command.cpp:455:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  455 |     itoa(t, v);
+      |     ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
 upstream/source/src/clients2c.cpp:1272:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1272 |                         itoa(a1, mode);
       |                         ^
@@ -212,6 +230,12 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
+In file included from upstream/source/src/console.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 upstream/source/src/clients2c.cpp:1280:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1280 |                         itoa(a1, getint(p));
       |                         ^
@@ -260,33 +284,21 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
-upstream/source/src/command.cpp:394:34: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
-  394 |         case ID_VAR: { string t; itoa(t, *id->storage.i); return exchangestr(n, t); }
-      |                                  ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
-upstream/source/src/command.cpp:455:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
-  455 |     itoa(t, v);
-      |     ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
 upstream/source/src/command.cpp:1044:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1044 |             itoa(id->action, i+1);
       |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/clientgame.cpp:1629:29: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1629 |             string nm = ""; itoa(nm, nextmode);
+      |                             ^
 upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
   796 | #define itoa(s, i) sprintf(s, "%d", i)
       |                    ^
@@ -311,18 +323,6 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 upstream/source/src/command.cpp:1366:38: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1366 |         case ID_ALIAS: { string str; itoa(str, val); alias(name, str); return; }
       |                                      ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
-upstream/source/src/clientgame.cpp:1629:29: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
- 1629 |             string nm = ""; itoa(nm, nextmode);
-      |                             ^
 upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
   796 | #define itoa(s, i) sprintf(s, "%d", i)
       |                    ^
@@ -372,6 +372,12 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 [CXX] main
 [CXX] menus
 [CXX] touch/touch
+In file included from upstream/source/src/menus.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/main.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -390,13 +396,30 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/menus.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-1 warning generated.
+upstream/source/src/menus.cpp:576:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  576 |             itoa(v, value);
+      |             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+upstream/source/src/menus.cpp:593:14: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  593 |         else itoa(curval, value); // display number only
+      |              ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
 In file included from upstream/source/src/touch/touch.cpp:51:
 upstream/source/src/touch/core/game.h:111:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
   111 |             itoa(nextmode, config.PLAYOFFLINE_GAMEMODE);
@@ -418,7 +441,8 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
   796 | #define itoa(s, i) sprintf(s, "%d", i)
       |                    ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+  278 | __deprecated_msg("This function is provided for compatibility reason1s warning  generatedo.
+nly.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
       | ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
@@ -436,38 +460,14 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
-upstream/source/src/menus.cpp:576:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
-  576 |             itoa(v, value);
-      |             ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  In file included from 227upstream/source/src/touch/touch.cpp | :        72#:
-dupstream/source/src/touch/mainscene/serverscene.he:f392i:n25e:  _warning: _first argument in call to 'memset' is a pointer to non-trivially copyable type 'serverinfo' [-Wnontrivial-memcall]d
-epr  e392c | a t e d _ m s g ( _ m s ge)l s_e_ amtetmrsiebtu(t&es_e_l(e(c_t_eddesperrevceart,e d0_,_ (s_imzsego)f)()s
-e      r| v                                                      ^e
-rinfo));
+In file included from upstream/source/src/touch/touch.cpp:72:
+upstream/source/src/touch/mainscene/serverscene.h:392:25: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'serverinfo' [-Wnontrivial-memcall]
+  392 |             else memset(&selectedserver, 0, sizeof(serverinfo));
       |                         ^
 upstream/source/src/touch/mainscene/serverscene.h:392:25: note: explicitly cast the pointer to silence this warning
-  392 | upstream/source/src/menus.cpp : 593 :14 :   warning:  'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations] 
-     593  | e l s e   m e m seelts(e& sietloeac(tceudrserver, 0, sizeof(serverinfo));
+  392 |             else memset(&selectedserver, 0, sizeof(serverinfo));
       |                         ^
       |                         (void*)
-val, value); // display number only
-      |              ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
 In file included from upstream/source/src/touch/touch.cpp:76:
 upstream/source/src/touch/gamescene/settingsscene.h:26:19: warning: ISO C++11 does not allow conversion from string literal to 'char *const' [-Wwritable-strings]
    26 |         onoff.add("OFF");
@@ -497,18 +497,66 @@ upstream/source/src/touch/gamescene/settingsscene.h:40:28: warning: ISO C++11 do
 [CXX] openal
 [CXX] packetqueue
 [CXX] physics
-In file included from upstream/source/src/openal.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/oggstream.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/openal.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/oggstream.cpp:62:5: warning: 'alGenBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   62 |     alGenBuffers(2, bufferids);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:591:25: note: 'alGenBuffers' has been explicitly marked deprecated here
+  591 | AL_API void AL_APIENTRY alGenBuffers( ALsizei n, ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:72:8: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   72 |     if(alIsBuffer(bufferids[0]) || alIsBuffer(bufferids[1]))
+      |        ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
+  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/oggstream.cpp:72:36: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   72 |     if(alIsBuffer(bufferids[0]) || alIsBuffer(bufferids[1]))
+      |                                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
+  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
+      |                              ^
+upstream/source/src/oggstream.cpp:75:9: warning: 'alDeleteBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   75 |         alDeleteBuffers(2, bufferids);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:594:25: note: 'alDeleteBuffers' has been explicitly marked deprecated here
+  594 | AL_API void AL_APIENTRY alDeleteBuffers( ALsizei n, const ALuint* buffers ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:174:9: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  174 |         alBufferData(bufid, format, pcm, size, info->rate);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
+  600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:189:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  189 |     alGetSourcei(src->id, AL_BUFFERS_PROCESSED, &processed);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
+  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:193:9: warning: 'alSourceUnqueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  193 |         alSourceUnqueueBuffers(src->id, 1, &buffer);
+      |         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:573:25: note: 'alSourceUnqueueBuffers' has been explicitly marked deprecated here
+  573 | AL_API void AL_APIENTRY alSourceUnqueueBuffers( ALuint sid, ALsizei numEntries, ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
+upstream/source/src/oggstream.cpp:195:20: warning: 'alSourceQueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+  195 |         if(active) alSourceQueueBuffers(src->id, 1, &buffer);
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:571:25: note: 'alSourceQueueBuffers' has been explicitly marked deprecated here
+  571 | AL_API void AL_APIENTRY alSourceQueueBuffers( ALuint sid, ALsizei numEntries, const ALuint *bids ) OPENAL_DEPRECATED;
+      |                         ^
 upstream/source/src/openal.cpp:15:22: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
    15 |     ASSERT(!valid || alIsSource(id));
       |                      ^
@@ -528,40 +576,16 @@ upstream/source/src/openal.cpp:59:5: warning: 'alSourcef' is deprecated: first d
   508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
       |                         ^
 upstream/source/src/openal.cpp:60:5: warning: 'alSourcef' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-   60 |     alSourcef(id, AL_ROLLOFF_FACTOR, al_rollofffactor/1upstream/source/src/oggstream.cpp:62:5: warning: 'alGenBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-   62 |     alGenBuffers(2, bufferids);
+   60 |     alSourcef(id, AL_ROLLOFF_FACTOR, al_rollofffactor/100.0f);
       |     ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:591:25: note: 'alGenBuffers' has been explicitly marked deprecated here
-  591 | AL_API void AL_APIENTRY alGenBuffers( ALsizei n, ALuint* buffers ) OPENAL_DEPRECATED;
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:508:25: note: 'alSourcef' has been explicitly marked deprecated here
+  508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
       |                         ^
-upstream/source/src/oggstream.cpp:72:8: warning: 'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-   72 |     if(alIsBuffer(bufferids[0]) || alIsBuffer(bufferids[1]))
-      |        ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:597:30: note: 'alIsBuffer' has been explicitly marked deprecated here
-  597 | AL_API ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENA00L._0DfE)P;R
-E      C| A    ^T
-ED;
-      /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h| :                             ^508
-:25: note: 'alSourcef' has been explicitly marked deprecated here
-  508 | AL_APupstream/source/src/oggstream.cppI: 72v:o36i:d  warning: A'alIsBuffer' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]L
-_A   P72I | E N T R Yi fa(laSoulrIcseBfu(f fAeLru(ibnutf fseirdi,d sA[L0e]n)u m| |p aarlIsBuffer(bamu,f fAeLrfildosa[t1 ]v)a)l
-u      e|                                     ^)
- OPE/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.hN:A597L:_30D:E Pnote: R'alIsBuffer' has been explicitly marked deprecated hereE
-CAT  E597D | ;A
-L      _| A                        ^P
-I ALboolean AL_APIENTRY alIsBuffer( ALuint bid ) OPENAL_DEPRECATED;
-      |                              ^
-upstream/source/src/oggstream.cpp:75:9: warning: 'alDeleteBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-   75 |         alDeletupstream/source/src/openal.cpp:82:5: warning: 'alGenSources' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]e
-B   u82f | f e r s (a2l,G ebnuSfofuerrciedss()1;,
-       &| i        ^d
-);
-      | /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h    ^:
-594/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h::25497:: 25note: :'alDeleteBuffers' has been explicitly marked deprecated here 
-note: 'alGenSources' has been explicitly marked deprecated here
-    594497 |  | AALL__AAPPII  vvooiidd  AALL__AAPPIIEENNTTRRYY  aallDGeelneStoeuBrucfefse(rs (A LAsLisziezie in ,n ,A Lcuoinnstt*  AsLouuirncte*s  b)u fOfPeErNsA L)_ DOEPPERNEACLA_TDEEDP;R
-E      C| A                        ^T
-ED;
+upstream/source/src/openal.cpp:82:5: warning: 'alGenSources' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
+   82 |     alGenSources(1, &id);
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:497:25: note: 'alGenSources' has been explicitly marked deprecated here
+  497 | AL_API void AL_APIENTRY alGenSources( ALsizei n, ALuint* sources ) OPENAL_DEPRECATED;
       |                         ^
 upstream/source/src/openal.cpp:90:5: warning: 'alDeleteSources' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
    90 |     alDeleteSources(1, &id);
@@ -612,41 +636,17 @@ upstream/source/src/openal.cpp:143:5: warning: 'alSourcef' is deprecated: first 
   508 | AL_API void AL_APIENTRY alSourcef( ALuint sid, ALenum param, ALfloat value ) OPENAL_DEPRECATED;
       |                         ^
 upstream/source/src/openal.cpp:155:5: warning: 'alSource3f' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  155 |     alSourceupstream/source/src/oggstream.cpp:3174f:(9i:d ,warning:  'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]A
-L_POS  I174T | I O N ,   x ,   ya,l zB)u;f
-f      e| r    ^D
-ata(bufid, format, pcm, size, /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.hinfo->rate);
-      |         ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
-  600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
-      |                         ^
-upstream/source/src/oggstream.cpp:189:5: warning: 'alGetSourcei' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  189 |     alGetSourcei(src->id, AL_BUFFERS_PROCESSED, &processed);
+  155 |     alSource3f(id, AL_POSITION, x, y, z);
       |     ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:529:25: note: 'alGetSourcei' has been explicitly marked deprecated here
-  529 | AL_API void AL_APIENTRY alGetSourcei( ALuint sid,  ALenum param, ALint* value ) OPENAL_DEPRECATED;
-      |                         ^
-upstream/source/src/oggstream.cpp:193:9: warning: 'alSourceUnqueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  193 |         alSourceUnqueueBuffers(src:510:25: note: 'alSource3f' has been explicitly marked deprecated here-
->id  ,510  | 1A,L _&AbPuIf fveori)d; 
-A      L| _        ^A
-PIENTRY/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h :a573l:S25o:u rnote: c'alSourceUnqueueBuffers' has been explicitly marked deprecated heree
-3f(   573A | LAuLi_nAtP Is ivdo,i dA LAeLn_uAmP IpEaNrTaRmY,  aAlLSfoluoracte Uvnaqluueeu1e,B uAfLffelrosa(t  AvLauliunet2, ALfloat  sviadl,u eA3L s)i zOePiE NnAuLm_EDnEtPrRiEeCsA,T EADL;u
-i      n| t                        ^ 
-*bids ) OPENAL_DEPRECATED;
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:510:25: note: 'alSource3f' has been explicitly marked deprecated here
+  510 | AL_API void AL_APIENTRY alSource3f( ALuint sid, ALenum param, ALfloat value1, ALfloat value2, ALfloat value3 ) OPENAL_DEPRECATED;
       |                         ^
 upstream/source/src/openal.cpp:157:58: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  157 |     return !ALERRF("id %u, %d, x: %f, y: %f, z: %f", idupstream/source/src/oggstream.cpp:,195 :a20l:I swarning: S'alSourceQueueBuffers' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]o
-urce  (195i | d )   = =   A L _iTfR(UaEc t?i v1e ):  a0l,S o uxr,c eyQ,u ezu)e;B
-u      f| f                                                         ^e
-r/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.hs:(503s:r30c:- >note: i'alIsSource' has been explicitly marked deprecated hered
-,   5031 | ,A L&_bAuPfIf eArL)b;o
-o      l| e                   ^
-an AL_A/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.hP:I571E:N25T:R Ynote:  'alSourceQueueBuffers' has been explicitly marked deprecated herea
-lIsS  o571u | rAcLe_(A PAIL uvionitd  sAiLd_ A)P IOEPNETNRAYL _aDlESPoRuErCcAeTQEuDe;u
-e      B| u                             ^f
-fers( ALuint sid, ALsizei numEntries, const ALuint *bids ) OPENAL_DEPRECATED;
-      |                         ^
+  157 |     return !ALERRF("id %u, %d, x: %f, y: %f, z: %f", id, alIsSource(id) == AL_TRUE ? 1 : 0,  x, y, z);
+      |                                                          ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:503:30: note: 'alIsSource' has been explicitly marked deprecated here
+  503 | AL_API ALboolean AL_APIENTRY alIsSource( ALuint sid ) OPENAL_DEPRECATED;
+      |                              ^
 upstream/source/src/openal.cpp:164:5: warning: 'alSource3f' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
   164 |     alSource3f(id, AL_VELOCITY, x, y, z);
       |     ^
@@ -693,13 +693,7 @@ upstream/source/src/openal.cpp:226:5: warning: 'alSourceStop' is deprecated: fir
   226 |     alSourceStop(id);
       |     ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:560:25: note: 'alSourceStop' has been explicitly marked deprecated here
-  560 | AL_API void AL_APIENTRY aIn file included from upstream/source/src/packetqueue.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-lSourceStop( ALuint sid ) OPENAL_DEPRECATED;
+  560 | AL_API void AL_APIENTRY alSourceStop( ALuint sid ) OPENAL_DEPRECATED;
       |                         ^
 upstream/source/src/openal.cpp:233:5: warning: 'alSourceRewind' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
   233 |     alSourceRewind(id);
@@ -719,6 +713,12 @@ upstream/source/src/openal.cpp:264:5: warning: 'alGenBuffers' is deprecated: fir
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:591:25: note: 'alGenBuffers' has been explicitly marked deprecated here
   591 | AL_API void AL_APIENTRY alGenBuffers( ALsizei n, ALuint* buffers ) OPENAL_DEPRECATED;
       |                         ^
+In file included from upstream/source/src/packetqueue.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 upstream/source/src/openal.cpp:295:21: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
   295 |                     alBufferData(id, info->channels == 2 ? AL_FORMAT_STEREO16 : AL_FORMAT_MONO16, buf.getbuf(), buf.length(), info->rate);
       |                     ^
@@ -756,32 +756,26 @@ upstream/source/src/openal.cpp:388:17: warning: 'alGetError' is deprecated: firs
   404 | AL_API ALenum AL_APIENTRY alGetError( void ) OPENAL_DEPRECATED;
       |                           ^
 9 warnings generated.
-1 warning generated.
 In file included from upstream/source/src/physics.cpp:6:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+1 warning generated.
 33 warnings generated.
 1 warning generated.
 [CXX] protocol
 [CXX] rendercubes
 [CXX] rendergl
 [CXX] renderhud
-In file included from upstream/source/src/rendercubes.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/renderhud.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/protocol.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendercubes.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -793,30 +787,24 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/renderhud.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 upstream/source/src/rendergl.cpp:1129:10: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; pointer may be assumed to always convert to true [-Wundefined-bool-conversion]
  1129 |     if(!&mmi) return false;
       |        ~ ^~~
-2 warnings generated.
 1 warning generated.
+2 warnings generated.
 1 warning generated.
 1 warning generated.
 [CXX] rendermodel
 [CXX] renderparticles
 [CXX] rendertext
 [CXX] rndmap
-In file included from upstream/source/src/rendertext.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/rndmap.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/rendermodel.cpp:1:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -828,6 +816,19 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendertext.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/rendermodel.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+1 warning generated.
 In file included from upstream/source/src/rendermodel.cpp:10:
 upstream/source/src/vertmodel.h:730:24: warning: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'tag' [-Wnontrivial-memcall]
   730 |                 memcpy(&ntags[(numtags + 1)*i], &tags[numtags*i], numtags*sizeof(tag));
@@ -836,7 +837,6 @@ upstream/source/src/vertmodel.h:730:24: note: explicitly cast the pointer to sil
   730 |                 memcpy(&ntags[(numtags + 1)*i], &tags[numtags*i], numtags*sizeof(tag));
       |                        ^
       |                        (void*)
-1 warning generated.
 1 warning generated.
 1 warning generated.
 2 warnings generated.
@@ -850,19 +850,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/server.cpp:4:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/serverbrowser.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/serverms.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/server.cpp:4:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -880,6 +874,12 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
+In file included from upstream/source/src/serverbrowser.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 1 warning generated.
 2 warnings generated.
 1 warning generated.
@@ -888,25 +888,25 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 [CXX] soundlocation
 [CXX] soundscheduler
 [CXX] stream
-In file included from upstream/source/src/stream.cpp:1:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/soundscheduler.cpp:5:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/soundlocation.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/stream.cpp:1:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/shadow.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/soundscheduler.cpp:5:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -938,12 +938,6 @@ upstream/source/src/stream.cpp:397:16: warning: 'readdir_r' is deprecated: This 
 [CXX] tools
 [CXX] water
 [CXX] weapon
-In file included from upstream/source/src/tools.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/texture.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -956,12 +950,19 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/tools.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/weapon.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+1 warning generated.
 upstream/source/src/weapon.cpp:1348:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1348 |     sprintf(gunstats, "%d", mag);
       |     ^
@@ -972,20 +973,19 @@ upstream/source/src/weapon.cpp:1348:5: warning: 'sprintf' is deprecated: This fu
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
 1 warning generated.
-1 warning generated.
 2 warnings generated.
 1 warning generated.
 [CXX] wizard
 [CXX] world
 [CXX] worldio
 [CXX] worldlight
-In file included from upstream/source/src/world.cpp:3:
+In file included from upstream/source/src/wizard.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/wizard.cpp:3:
+In file included from upstream/source/src/world.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -1011,13 +1011,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 [CXX] worldrender
 [CXX] zip
 [CXX] bot/bot
-In file included from upstream/source/src/worldrender.cpp:4:
+In file included from upstream/source/src/worldocull.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/worldocull.cpp:3:
+In file included from upstream/source/src/worldrender.cpp:4:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -1029,6 +1029,7 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+1 warning generated.
 In file included from upstream/source/src/bot/bot.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -1038,17 +1039,10 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 1 warning generated.
 1 warning generated.
 1 warning generated.
-1 warning generated.
 [CXX] bot/botmanager
 [CXX] bot/bot_ai
 [CXX] bot/bot_util
 [CXX] bot/bot_waypoint
-In file included from upstream/source/src/bot/bot_util.cpp:13:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/bot/bot_ai.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -1061,19 +1055,24 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-upstream/source/src/bot/bot_util.cpp:98:41: warning: implicit conversion from 'long' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
-   98 |      return (from + (float) lrand () / (LRAND_MAX / (to - from)));
-      |                                         ^~~~~~~~~ ~
-upstream/source/src/bot/bot_util.cpp:25:19: note: expanded from macro 'LRAND_MAX'
-   25 | #define LRAND_MAX 2147483647L
-      |                   ^~~~~~~~~~~
 In file included from upstream/source/src/bot/bot_waypoint.cpp:10:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-2 warnings generated.
+In file included from upstream/source/src/bot/bot_util.cpp:13:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+upstream/source/src/bot/bot_util.cpp:98:41: warning: implicit conversion from 'long' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+   98 |      return (from + (float) lrand () / (LRAND_MAX / (to - from)));
+      |                                         ^~~~~~~~~ ~
+upstream/source/src/bot/bot_util.cpp:25:19: note: expanded from macro 'LRAND_MAX'
+   25 | #define LRAND_MAX 2147483647L
+      |                   ^~~~~~~~~~~
 upstream/source/src/bot/bot_waypoint.cpp:582:16: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
   582 |                sprintf(szWPInfo, "Distance nearest waypoint: %f", GetDistance(player1->o, nearestwp->v_origin));
       |                ^
@@ -1101,18 +1100,19 @@ upstream/source/src/bot/bot_waypoint.cpp:608:16: warning: 'sprintf' is deprecate
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
+2 warnings generated.
 1 warning generated.
 1 warning generated.
 4 warnings generated.
 [CXX] bot/ac_bot
 [CXX] bot/ac_bot_ai
-In file included from upstream/source/src/bot/ac_bot.cpp:13:
+In file included from upstream/source/src/bot/ac_bot_ai.cpp:11:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/bot/ac_bot_ai.cpp:11:
+In file included from upstream/source/src/bot/ac_bot.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -1130,10 +1130,553 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 [CC] enet/unix
 [CC] enet/win32
 [OBJCXX] ios/main.m
-ios/main.m:4:10: fatal error: 'SDL_uikitappdelegate.h' file not found
-    4 | #include "SDL_uikitappdelegate.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~
-1 error generated.
+[LINK] AC
+Undefined symbols for architecture arm64:
+  "mac_pasteconsole(char*)", referenced from:
+      pasteconsole(char*) in console.o
+      textinputbuffer::key(int, bool, int) in console.o
+  "_gl4es_glAlphaFunc", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glBegin", referenced from:
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      line(int, int, float, int, int, float) in rendergl.o
+      line(int, int, int, int, color*) in rendergl.o
+      box(block&, float, float, float, float) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      ...
+  "_gl4es_glBindTexture", referenced from:
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+      renderstrips() in rendercubes.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, vec const&, vec const&, float, float, float, float) in rendergl.o
+      rect(unsigned int, float, float, float, float, float, float, float, float) in rendergl.o
+      circle(unsigned int, float, float, float, float, float, float, int) in rendergl.o
+      arrow(unsigned int, int, float, float, float, float, float) in rendergl.o
+      ...
+  "_gl4es_glBlendFunc", referenced from:
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      framedquadtexture(unsigned int, int, int, int, int, int, int, bool) in rendergl.o
+      renderaboveheadicon(playerent*) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      ...
+  "_gl4es_glCallList", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glClear", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      loadingscreen(char const*, ...) in renderhud.o
+      loadingscreen(char const*, ...) in renderhud.o
+      vertmodel::part::genshadow(int, int, stream*) in rendermodel.o
+  "_gl4es_glClearColor", referenced from:
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      loadingscreen(char const*, ...) in renderhud.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+  "_gl4es_glClearDepth", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+  "_gl4es_glClearStencil", referenced from:
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+  "_gl4es_glColor3f", referenced from:
+      renderentities() in entities.o
+      renderentities() in entities.o
+      drawarrow(int, int, int, int, float, float, float) in menus.o
+      gmenu::render() in menus.o
+      gmenu::render() in menus.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      ...
+  "_gl4es_glColor3ub", referenced from:
+      linestyle(float, int, int, int) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      framedquadtexture(unsigned int, int, int, int, int, int, int, bool) in rendergl.o
+      drawscope(bool) in renderhud.o
+      drawcrosshair(playerent*, int, color*, float) in renderhud.o
+      drawcrosshair(playerent*, int, color*, float) in renderhud.o
+      ...
+  "_gl4es_glColor4f", referenced from:
+      line(int, int, int, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      renderzones(float) in rendergl.o
+      drawdmgindicator() in renderhud.o
+      drawktfindicator(playerent*) in renderhud.o
+      drawequipicons(playerent*) in renderhud.o
+      ...
+  "_gl4es_glColor4ub", referenced from:
+      turn_on_transparency(int) in renderhud.o
+      drawequipicon(float, float, int, int) in renderhud.o
+      drawctficon(float, float, float, int, int, float, int) in renderhud.o
+      drawvoteicon(float, float, int, int, bool) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      draw_text(char const*, int, int, int, int, int, int, int, int) in rendertext.o
+      ...
+  "_gl4es_glColor4ubv", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      renderwater(float, unsigned int, unsigned int) in water.o
+  "_gl4es_glColorMask", referenced from:
+      renderstripssky() in rendercubes.o
+      renderstripssky() in rendercubes.o
+      renderbatchedmodel(model*, batchedmodel&) in rendermodel.o
+      renderbatchedmodel(model*, batchedmodel&) in rendermodel.o
+      rendermodel(char const*, int, int, float, vec const&, float, float, float, float, int, playerent*, modelattach*, float) in rendermodel.o
+      rendermodel(char const*, int, int, float, vec const&, float, float, float, float, int, playerent*, modelattach*, float) in rendermodel.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      ...
+  "_gl4es_glColorPointer", referenced from:
+      setupstrips() in rendercubes.o
+      varray::end() in rendergl.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glCopyTexSubImage2D", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+  "_gl4es_glCullFace", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      md2::render(int, int, float, int, vec const&, float, float, float, dynent*, modelattach*, float) in rendermodel.o
+      md2::render(int, int, float, int, vec const&, float, float, float, dynent*, modelattach*, float) in rendermodel.o
+      md3::render(int, int, float, int, vec const&, float, float, float, dynent*, modelattach*, float) in rendermodel.o
+      md3::render(int, int, float, int, vec const&, float, float, float, dynent*, modelattach*, float) in rendermodel.o
+      ...
+  "_gl4es_glDeleteLists", referenced from:
+      vertmodel::mesh::~mesh() in rendermodel.o
+      vertmodel::cleanup() in rendermodel.o
+  "_gl4es_glDeleteTextures", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      cleanupgl() in rendergl.o
+      cleanupgl() in rendergl.o
+      cleanupgl() in rendergl.o
+      vertmodel::part::~part() in rendermodel.o
+      vertmodel::cleanup() in rendermodel.o
+      ...
+  "_gl4es_glDepthFunc", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      renderbatchedmodel(model*, batchedmodel&) in rendermodel.o
+      renderbatchedmodel(model*, batchedmodel&) in rendermodel.o
+      ...
+  "_gl4es_glDepthMask", referenced from:
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      blendbox(int, int, int, int, bool, int, color*) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      vertmodel::endrender() in rendermodel.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      vertmodel::part::rendershadow(int, int, float, int, vec const&, float) in rendermodel.o
+      ...
+  "_gl4es_glDisable", referenced from:
+      CWaypointClass::DrawNearWaypoints() in bot_bot_waypoint.o
+      renderhudtexturepreview(int, int, bool) in editing.o
+      renderhudtexturepreview(int, int, bool) in editing.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      drawarrow(int, int, int, int, float, float, float) in menus.o
+      drawarrow(int, int, int, int, float, float, float) in menus.o
+      ...
+  "_gl4es_glDisableClientState", referenced from:
+      renderstrips() in rendercubes.o
+      renderstrips() in rendercubes.o
+      renderstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      ...
+  "_gl4es_glDrawArrays", referenced from:
+      renderstripssky() in rendercubes.o
+      renderstripssky() in rendercubes.o
+      renderstripssky() in rendercubes.o
+      renderstrips() in rendercubes.o
+      renderstrips() in rendercubes.o
+      renderstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      ...
+  "_gl4es_glDrawElements", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      drawexplosion(bool, float, float, float, float) in renderparticles.o
+      drawexplosion(bool, float, float, float, float) in renderparticles.o
+      drawexplosion(bool, float, float, float, float) in renderparticles.o
+      drawexplosion(bool, float, float, float, float) in renderparticles.o
+  "_gl4es_glEnable", referenced from:
+      CWaypointClass::DrawNearWaypoints() in bot_bot_waypoint.o
+      renderhudtexturepreview(int, int, bool) in editing.o
+      renderhudtexturepreview(int, int, bool) in editing.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      drawarrow(int, int, int, int, float, float, float) in menus.o
+      drawarrow(int, int, int, int, float, float, float) in menus.o
+      ...
+  "_gl4es_glEnableClientState", referenced from:
+      setupstrips() in rendercubes.o
+      setupstrips() in rendercubes.o
+      setupstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      ...
+  "_gl4es_glEnd", referenced from:
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      line(int, int, float, int, int, float) in rendergl.o
+      line(int, int, int, int, color*) in rendergl.o
+      box(block&, float, float, float, float) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      ...
+  "_gl4es_glEndList", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glFogf", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+  "_gl4es_glFogfv", referenced from:
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+  "_gl4es_glFogi", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+  "_gl4es_glFrustum", referenced from:
+      setperspective(float, float, float, float) in rendergl.o
+  "_gl4es_glGenLists", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glGenTextures", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+      vertmodel::part::loadshadows(char const*) in rendermodel.o
+      createexpmodtex(int, float) in renderparticles.o
+      loadsurface(char const*, int&, int&, int&, int, bool, bool, float, bool) in texture.o
+  "_gl4es_glGetFloatv", referenced from:
+      readmatrices() in rendergl.o
+      readmatrices() in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      renderbatchedmodel(model*, batchedmodel&) in rendermodel.o
+      rendermodel(char const*, int, int, float, vec const&, float, float, float, float, int, playerent*, modelattach*, float) in rendermodel.o
+  "_gl4es_glGetIntegerv", referenced from:
+      inittmus() in texture.o
+      inittmus() in texture.o
+  "_gl4es_glGetString", referenced from:
+      glext(char*) in rendergl.o
+      gl_checkextensions() in rendergl.o
+      gl_checkextensions() in rendergl.o
+      gl_checkextensions() in rendergl.o
+      gl_checkextensions() in rendergl.o
+  "_gl4es_glGetTexImage", referenced from:
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+  "_gl4es_glHint", referenced from:
+      _SDL_main in main.o
+      _SDL_main in main.o
+      gl_init(int, int, int, int, int) in rendergl.o
+      gl_init(int, int, int, int, int) in rendergl.o
+  "_gl4es_glLineWidth", referenced from:
+      cursorupdate() in editing.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      linestyle(float, int, int, int) in rendergl.o
+  "_gl4es_glLoadIdentity", referenced from:
+      console::render() in console.o
+      rendermenumdl() in menus.o
+      transplayer() in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      sethudgunperspective(bool) in rendergl.o
+      ...
+  "_gl4es_glLoadMatrixf", referenced from:
+      enablepolygonoffset(unsigned int) in rendergl.o
+      disablepolygonoffset(unsigned int, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      setprojtexmatrix() in water.o
+      setupmultitexrefract(unsigned int, unsigned int) in water.o
+      setupmultitexrefract(unsigned int, unsigned int) in water.o
+      ...
+  "_gl4es_glMatrixMode", referenced from:
+      enablepolygonoffset(unsigned int) in rendergl.o
+      enablepolygonoffset(unsigned int) in rendergl.o
+      disablepolygonoffset(unsigned int, bool) in rendergl.o
+      disablepolygonoffset(unsigned int, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      ...
+  "_gl4es_glMultMatrixf", referenced from:
+      vertmodel::part::render(int, int, float, int, dynent*) in rendermodel.o
+  "_gl4es_glNewList", referenced from:
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+  "_gl4es_glNormalPointer", referenced from:
+      varray::end() in rendergl.o
+  "_gl4es_glOrtho", referenced from:
+      console::render() in console.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      setperspective(float, float, float, float) in rendergl.o
+      drawscores() in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      gl_drawhud(int, int, int, int, int, bool, int) in renderhud.o
+      ...
+  "_gl4es_glPixelStorei", referenced from:
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+      vertmodel::part::genshadow(int, int, stream*) in rendermodel.o
+      uploadtexture(unsigned int, unsigned int, int, int, unsigned int, unsigned int, void*, int, int, bool) in texture.o
+  "_gl4es_glPolygonMode", referenced from:
+      CWaypointClass::DrawNearWaypoints() in bot_bot_waypoint.o
+      CWaypointClass::DrawNearWaypoints() in bot_bot_waypoint.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+  "_gl4es_glPolygonOffset", referenced from:
+      enablepolygonoffset(unsigned int) in rendergl.o
+      gl_drawframe(int, int, float, float, int) in rendergl.o
+  "_gl4es_glPopAttrib", referenced from:
+      drawmedals(float, float, int, int, Texture*) in renderhud.o
+      drawscores() in renderhud.o
+      drawscores() in renderhud.o
+      drawscores() in renderhud.o
+  "_gl4es_glPopMatrix", referenced from:
+      console::render() in console.o
+      rendermenumdl() in menus.o
+      renderaboveheadicon(playerent*) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawdmgindicator() in renderhud.o
+      ...
+  "_gl4es_glPushAttrib", referenced from:
+      drawmedals(float, float, int, int, Texture*) in renderhud.o
+      drawscores() in renderhud.o
+      drawscores() in renderhud.o
+      drawscores() in renderhud.o
+  "_gl4es_glPushMatrix", referenced from:
+      console::render() in console.o
+      rendermenumdl() in menus.o
+      renderaboveheadicon(playerent*) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawdmgindicator() in renderhud.o
+      ...
+  "_gl4es_glReadPixels", referenced from:
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+      mapscreenshot(char const*, bool, int, float, int, int) in main.o
+      vertmodel::part::genshadow(int, int, stream*) in rendermodel.o
+  "_gl4es_glRotatef", referenced from:
+      rendermenumdl() in menus.o
+      rendermenumdl() in menus.o
+      renderaboveheadicon(playerent*) in rendergl.o
+      transplayer() in rendergl.o
+      transplayer() in rendergl.o
+      transplayer() in rendergl.o
+      transplayer() in rendergl.o
+      ...
+  "_gl4es_glScalef", referenced from:
+      rendermenumdl() in menus.o
+      transplayer() in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      sethudgunperspective(bool) in rendergl.o
+      drawhudgun() in rendergl.o
+      drawdmgindicator() in renderhud.o
+      ...
+  "_gl4es_glScissor", referenced from:
+      drawreflection(float, int, int, float, bool) in rendergl.o
+  "_gl4es_glShadeModel", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+  "_gl4es_glStencilFunc", referenced from:
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+  "_gl4es_glStencilOp", referenced from:
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+      drawstencilshadows() in shadow.o
+  "_gl4es_glTexCoord2f", referenced from:
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, vec const&, vec const&, float, float, float, float) in rendergl.o
+      quad(unsigned int, vec const&, vec const&, float, float, float, float) in rendergl.o
+      quad(unsigned int, vec const&, vec const&, float, float, float, float) in rendergl.o
+      quad(unsigned int, vec const&, vec const&, float, float, float, float) in rendergl.o
+      ...
+  "_gl4es_glTexCoord2i", referenced from:
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      ...
+  "_gl4es_glTexCoordPointer", referenced from:
+      setupstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      varray::end() in rendergl.o
+      varray::end() in rendergl.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      setupexplosion() in renderparticles.o
+      setupexplosion() in renderparticles.o
+      ...
+  "_gl4es_glTexEnvfv", referenced from:
+      committmu(int, tmu&) in texture.o
+  "_gl4es_glTexEnvi", referenced from:
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      committmufunc(bool, tmufunc&, tmufunc&) in texture.o
+      ...
+  "_gl4es_glTexImage2D", referenced from:
+      uploadtexture(unsigned int, unsigned int, int, int, unsigned int, unsigned int, void*, int, int, bool) in texture.o
+  "_gl4es_glTexParameteri", referenced from:
+      createtexture(int, int, int, void*, int, bool, bool, unsigned int) in texture.o
+      createtexture(int, int, int, void*, int, bool, bool, unsigned int) in texture.o
+      createtexture(int, int, int, void*, int, bool, bool, unsigned int) in texture.o
+      createtexture(int, int, int, void*, int, bool, bool, unsigned int) in texture.o
+      createtexture(int, int, int, void*, int, bool, bool, unsigned int) in texture.o
+  "_gl4es_glTranslatef", referenced from:
+      renderaboveheadicon(playerent*) in rendergl.o
+      transplayer() in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawdmgindicator() in renderhud.o
+      drawdmgindicator() in renderhud.o
+      drawktfindicator(playerent*) in renderhud.o
+      drawktfindicator(playerent*) in renderhud.o
+      ...
+  "_gl4es_glVertex2f", referenced from:
+      line(int, int, int, int, color*) in rendergl.o
+      line(int, int, int, int, color*) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      box2d(int, int, int, int, int) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      ...
+  "_gl4es_glVertex3f", referenced from:
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      ...
+  "_gl4es_glVertex3fv", referenced from:
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      ...
+  "_gl4es_glVertexPointer", referenced from:
+      setupstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      varray::end() in rendergl.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      setupexplosion() in renderparticles.o
+  "_gl4es_glViewport", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      quad(unsigned int, float, float, float, float, float, float, float) in rendergl.o
+      ...
+  "_gl4es_glVertex3f", referenced from:
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      renderclip(int, int, int, float, float, float, float, float, int) in entities.o
+      ...
+  "_gl4es_glVertex3fv", referenced from:
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      renderentarrow(entity const&, vec const&, float) in entities.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      render_particles(int, int) in renderparticles.o
+      ...
+  "_gl4es_glVertexPointer", referenced from:
+      setupstrips() in rendercubes.o
+      rendershadow(int, int, int, int, vec const&, vec const&) in rendercubes.o
+      varray::end() in rendergl.o
+      vertmodel::mesh::render(animstate&, vertmodel::anpos&, vertmodel::anpos*, float) in rendermodel.o
+      setupexplosion() in renderparticles.o
+  "_gl4es_glViewport", referenced from:
+      gl_init(int, int, int, int, int) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      drawreflection(float, int, int, float, bool) in rendergl.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+      vertmodel::part::genshadows(float, float) in rendermodel.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
 EXIT_CODE=1
 ========== STEP: Package ==========
 cp: AC: No such file or directory
