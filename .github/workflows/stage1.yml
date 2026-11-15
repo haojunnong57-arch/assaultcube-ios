@@ -1,0 +1,52 @@
+name: Stage1 SDL2 + GL4ES (iOS arm64)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  stage1:
+    runs-on: macos-26
+    env:
+      IOS_MIN: "17.0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+          clang --version
+
+      - name: Clone SDL2
+        run: git clone --depth 1 -b SDL2 https://github.com/libsdl-org/SDL.git sdl
+
+      - name: Build SDL2 static for iOS
+        run: |
+          cmake -S sdl -B sdl-build -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=$IOS_MIN \
+            -DSDL_SHARED=OFF -DSDL_STATIC=ON -DSDL_TEST=OFF -DSDL_TESTS=OFF
+          cmake --build sdl-build --config Release -- -sdk iphoneos
+          echo '--- static libs ---'
+          find sdl-build -name '*.a' -exec ls -lh {} \;
+
+      - name: Clone GL4ES
+        run: git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
+
+      - name: Build GL4ES static for iOS
+        run: |
+          cmake -S gl4es -B gl4es-build -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=$IOS_MIN \
+            -DCMAKE_BUILD_TYPE=Release
+          cmake --build gl4es-build --config Release -- -sdk iphoneos
+          echo '--- static libs ---'
+          find gl4es-build -name '*.a' -exec ls -lh {} \;
+
+      - name: Summarize
+        if: always()
+        run: echo 'Stage1 finished (see logs above for build result).'
