@@ -14,7 +14,7 @@ fi
 SDK=$(xcrun --sdk iphoneos --show-sdk-path)
 CC="xcrun --sdk iphoneos clang   -arch arm64 -isysroot $SDK -mios-version-min=$IOS_MIN"
 CXX="xcrun --sdk iphoneos clang++ -arch arm64 -isysroot $SDK -mios-version-min=$IOS_MIN"
-INC="-Iprefix/include/SDL2 -Iprefix/include -Istubs -I$AC/source/src -I$AC/source/include -Igl4es/include -I$AC/source/enet/include"
+INC="-Istubs -Igl4es/include -Iprefix/include/SDL2 -Iprefix/include -I$AC/source/src -I$AC/source/include -I$AC/source/enet/include"
 CFLAGS="-D__ANDROID__ -O2"
 CXXFLAGS="-D__ANDROID__ -std=c++11 -fno-rtti -fno-exceptions -fsigned-char -fstack-protector -O2"
 
