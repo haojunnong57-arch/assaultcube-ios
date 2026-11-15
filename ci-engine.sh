@@ -19,14 +19,19 @@ CFLAGS="-D__ANDROID__ -O2"
 CXXFLAGS="-D__ANDROID__ -std=c++11 -fno-rtti -fno-exceptions -fsigned-char -fstack-protector -O2"
 
 # iOS patches (perl: macOS sed chokes on '|' inside s|||)
-perl -pi -e 's{\Q"/storage/emulated/0/Android/data/net.cubers.assaultcube/files/"\E}{getenv("AC_BASE_DIR")}' "$AC/source/src/stream.cpp"
+# 1) absolute base dir is not needed: we chdir() into the .app bundle in main.m
+perl -pi -e 's{\Q"/storage/emulated/0/Android/data/net.cubers.assaultcube/files/"\E;}{NULL;}' "$AC/source/src/stream.cpp"
+# 2) writable profile dir (Documents/assaultcube) comes from the environment
 perl -pi -e 's{\Q#define DEFAULTPROFILEPATH "profile"\E}{#define DEFAULTPROFILEPATH (getenv("AC_HOME_DIR")?getenv("AC_HOME_DIR"):"profile")}' "$AC/source/src/main.cpp"
-# SDL >= 2.0.18 no longer ships KMOD_LMETA/KMOD_RMETA; use the GUI (Cmd) equivalents
+# 3) SDL >= 2.0.18 no longer ships KMOD_LMETA/KMOD_RMETA; use the GUI (Cmd) equivalents
 perl -pi -e 's{\Q#define MOD_KEYS_CTRL (KMOD_LMETA|KMOD_RMETA)\E}{#define MOD_KEYS_CTRL (KMOD_LGUI|KMOD_RGUI)}' "$AC/source/src/platform.h"
-# system() is unavailable on iOS; this desktop server-wizard path is never used by the mobile client
+# 4) system() is unavailable on iOS; this desktop server-wizard path is never used by the mobile client
 perl -pi -e 's{system\(argstr\.getbuf\(\)\);}{printf("(iOS: wizard server launch not supported)\\n");}' "$AC/source/src/wizard.cpp"
 
-grep -n "AC_BASE_DIR\|AC_HOME_DIR\|KMOD_LGUI\|wizard server launch" "$AC/source/src/stream.cpp" "$AC/source/src/main.cpp" "$AC/source/src/platform.h" "$AC/source/src/wizard.cpp" >> build.log 2>&1 || true
+echo "--- patched sources ---" >> build.log
+grep -n "absbasedir =" -A3 "$AC/source/src/stream.cpp" >> build.log 2>&1 || true
+grep -n "AC_HOME_DIR" "$AC/source/src/main.cpp" >> build.log 2>&1 || true
+grep -n "KMOD_LGUI" "$AC/source/src/platform.h" >> build.log 2>&1 || true
 
 mkdir -p objs
 
