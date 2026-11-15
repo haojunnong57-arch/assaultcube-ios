@@ -44,6 +44,9 @@ jobs:
       - name: Clone GL4ES
         run: bash ci-step.sh "Clone GL4ES" git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
 
+      - name: Patch GL4ES for Apple
+        run: bash ci-step.sh "Patch GL4ES" bash -c "sed -i '' 's|#ifdef __GNUC__|#if defined(__GNUC__) \\&\\& !defined(__APPLE__)|' gl4es/src/gl/attributes.h && grep -n 'defined(__GNUC__)' gl4es/src/gl/attributes.h"
+
       - name: Configure GL4ES
         run: >
           bash ci-step.sh "Configure GL4ES" cmake -S gl4es -B gl4es-build -G Xcode
@@ -68,6 +71,8 @@ jobs:
           -DCMAKE_INSTALL_PREFIX=$PWD/prefix
           -DCMAKE_PREFIX_PATH=$PWD/prefix
           -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED=NO
+          -DSDL2_INCLUDE_DIR=$PWD/prefix/include/SDL2
+          -DSDL2_LIBRARY=$PWD/prefix/lib/libSDL2.a
           -DBUILD_SHARED_LIBS=OFF
           -DSDL2IMAGE_VENDORED=ON
           -DSDL2IMAGE_TIF=OFF -DSDL2IMAGE_WEBP=OFF -DSDL2IMAGE_AVIF=OFF -DSDL2IMAGE_JXL=OFF
@@ -109,6 +114,8 @@ jobs:
           -DCMAKE_INSTALL_PREFIX=$PWD/prefix
           -DCMAKE_PREFIX_PATH=$PWD/prefix
           -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED=NO
+          -DOGG_INCLUDE_DIR=$PWD/prefix/include
+          -DOGG_LIBRARY=$PWD/prefix/lib/libogg.a
           -DBUILD_SHARED_LIBS=OFF
 
       - name: Build libvorbis
@@ -128,7 +135,7 @@ jobs:
           -DCMAKE_OSX_DEPLOYMENT_TARGET=${IOS_MIN}
           -DCMAKE_INSTALL_PREFIX=$PWD/prefix
           -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED=NO
-          -DLIBTYPE=STATIC -DALSOFT_EXAMPLES=OFF -DALSOFT_TESTS=OFF
+          -DLIBTYPE=STATIC -DALSOFT_EXAMPLES=OFF -DALSOFT_TESTS=OFF -DALSOFT_UTILS=OFF
 
       - name: Build OpenAL-Soft
         run: bash ci-step.sh "Build OpenAL-Soft" cmake --build oal-build --config Release -- -sdk iphoneos
