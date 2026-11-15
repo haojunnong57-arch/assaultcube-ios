@@ -30,7 +30,7 @@ jobs:
           path: |
             prefix
             gl4es
-          key: iosdeps-v2
+          key: iosdeps-v3
 
       - name: Build deps (cache miss only)
         if: steps.cache.outputs.cache-hit != 'true'

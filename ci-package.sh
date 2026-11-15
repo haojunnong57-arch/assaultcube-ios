@@ -5,17 +5,14 @@ AC=upstream
 APP=Payload/AssaultCube.app
 
 rm -rf Payload AssaultCube-iOS.ipa
-mkdir -p "$APP/Frameworks"
+mkdir -p "$APP"
 
 cp AC "$APP/AC"
 cp ios/Info.plist "$APP/Info.plist"
-cp gl4es/lib/Release/libGL.dylib "$APP/Frameworks/"
 
 for d in packages config mods demos bot; do
-  echo "[ASSETS] $d"
+  echo "[ASSETS] $d" >> build.log
   ditto "$AC/$d" "$APP/$d"
-  du -sh "$APP/$d" | tee -a build.log
-  echo "$d" >> build.log
   du -sh "$APP/$d" >> build.log
 done
 

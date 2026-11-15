@@ -28,6 +28,25 @@ static void ac_ios_setup(void)
     setenv("AC_HOME_DIR", [home UTF8String], 1);
 }
 
+/* Engine's console paste path calls mac_pasteconsole() under __APPLE__.
+   Provide it with SDL's clipboard API (works via UIPasteboard on iOS). */
+#ifdef __cplusplus
+extern "C" {
+#endif
+void mac_pasteconsole(char *dst)
+{
+    const char *txt = SDL_GetClipboardText();
+    if (txt) {
+        snprintf(dst, 260, "%s", txt);
+        SDL_free((void *)txt);
+    } else {
+        dst[0] = '\0';
+    }
+}
+#ifdef __cplusplus
+}
+#endif
+
 /* weak: if SDL2's static lib already provides main() for UIKit, that one wins */
 __attribute__((weak))
 int main(int argc, char **argv)

@@ -12,12 +12,15 @@ if [ ! -f prefix/lib/libSDL2.a ]; then
   cmake --install sdl-build --config Release
 fi
 
-if [ ! -f gl4es/lib/Release/libGL.dylib ]; then
-  echo "== GL4ES"
+if [ ! -f gl4es/lib/libGL.a ]; then
+  echo "== GL4ES (static)"
   git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
   sed -i '' 's|#ifdef __GNUC__|#if defined(__GNUC__) \&\& !defined(__APPLE__)|' gl4es/src/gl/attributes.h
-  $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release
+  $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release -DSTATICLIB=ON
   cmake --build gl4es-build --config Release -- -sdk iphoneos
+  mkdir -p gl4es/lib
+  find gl4es-build -name "libGL.a" | head -1 | xargs -I{} cp {} gl4es/lib/libGL.a
+  ls -lh gl4es/lib/libGL.a
 fi
 
 if [ ! -f prefix/lib/libSDL2_image.a ]; then
@@ -56,4 +59,4 @@ if [ ! -f prefix/lib/libopenal.a ]; then
 fi
 
 echo "deps ready"
-ls -lh prefix/lib/*.a gl4es/lib/Release/libGL.dylib 2>/dev/null
+ls -lh prefix/lib/*.a gl4es/lib/libGL.a 2>/dev/null
