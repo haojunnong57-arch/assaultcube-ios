@@ -30,7 +30,7 @@ jobs:
           path: |
             prefix
             gl4es
-          key: iosdeps-v4
+          key: iosdeps-v5
 
       - name: Build deps (idempotent, skips present libs)
         run: bash ci-step.sh "Deps" bash ci-deps.sh
