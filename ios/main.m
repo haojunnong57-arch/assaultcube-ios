@@ -1,11 +1,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#include <signal.h>
-#include <execinfo.h>
 #include <unistd.h>
-#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
-#include <stdarg.h>
+#include <string.h>
 #define SDL_MAIN_HANDLED 1
 #include "SDL.h"
 #include "SDL_main.h"
@@ -14,43 +12,27 @@
 extern "C" {
 #endif
 int SDL_main(int argc, char **argv);
+/* gl4es on Apple: the auto-init constructor is compiled out (NO_INIT_CONSTRUCTOR),
+   so the app must initialize it itself before ANY gl call (see gl4esinit.h). */
+void initialize_gl4es(void);
 #ifdef __cplusplus
 }
 #endif
 
-static FILE *g_log = NULL;
-
-static void ac_log(const char *fmt, ...)
+static void ac_log_line(const char *s)
 {
-    if (!g_log) return;
-    va_list ap;
-    va_start(ap, fmt);
-    vfprintf(g_log, fmt, ap);
-    va_end(ap);
-    fflush(g_log);
+    fputs(s, stderr);
+    fputc('\n', stderr);
+    fflush(stderr);
 }
 
-static void ac_crash_handler(int sig)
-{
-    void *frames[64];
-    int n = backtrace(frames, 64);
-    if (g_log) {
-        fprintf(g_log, "\n*** CRASH: signal %d ***\n", sig);
-        fflush(g_log);
-        backtrace_symbols_fd(frames, n, fileno(g_log));
-        fflush(g_log);
-    }
-    _exit(128 + sig);
-}
-
-/* Runs before main() no matter who provides main (SDL2 UIKit or ours). */
+/* Runs before any main() variant, i.e. before the engine makes its first gl call. */
 __attribute__((constructor))
 static void ac_ios_setup(void)
 {
     NSString *resPath = [[NSBundle mainBundle] resourcePath];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *home = nil;
-    if ([paths count] > 0) home = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"assaultcube"];
+    NSString *home = ([paths count] > 0) ? [[paths objectAtIndex:0] stringByAppendingPathComponent:@"assaultcube"] : nil;
     NSString *logPath = [home stringByAppendingPathComponent:@"ac_log.txt"];
 
     if (home) {
@@ -63,37 +45,23 @@ static void ac_ios_setup(void)
     }
     setvbuf(stdout, NULL, _IONBF, 0);
     setvbuf(stderr, NULL, _IONBF, 0);
-    g_log = stderr;
 
-    ac_log("=== AssaultCube iOS start %s ===\n", [[[NSDate date] description] UTF8String]);
-    ac_log("bundle: %s\n", resPath ? [resPath UTF8String] : "(nil)");
+    fprintf(stderr, "=== AssaultCube iOS start ===\n");
+    fprintf(stderr, "bundle: %s\n", resPath ? [resPath UTF8String] : "(nil)");
 
-    if (resPath && chdir([resPath UTF8String]) == 0) {
-        ac_log("chdir ok -> %s\n", [resPath UTF8String]);
-    } else {
-        ac_log("chdir FAILED\n");
-    }
-    char cwdbuf[1024];
-    cwdbuf[0] = 0;
-    if (getcwd(cwdbuf, sizeof(cwdbuf))) ac_log("cwd: %s\n", cwdbuf);
+    if (resPath && chdir([resPath UTF8String]) == 0) ac_log_line("chdir -> bundle ok");
+    else ac_log_line("chdir FAILED");
 
     if (home) setenv("AC_HOME_DIR", [home UTF8String], 1);
-    ac_log("home: %s\n", home ? [home UTF8String] : "(nil)");
 
-    NSString *pkg = resPath ? [resPath stringByAppendingPathComponent:@"packages"] : nil;
-    ac_log("packages exists: %d\n", pkg ? (int)[[NSFileManager defaultManager] fileExistsAtPath:pkg] : 0);
-
-    signal(SIGSEGV, ac_crash_handler);
-    signal(SIGABRT, ac_crash_handler);
-    signal(SIGBUS, ac_crash_handler);
-    signal(SIGILL, ac_crash_handler);
-    signal(SIGFPE, ac_crash_handler);
-    signal(SIGTRAP, ac_crash_handler);
+    /* No GL context exists yet, so skip gl4es hardware probing and use sane
+       OpenGL ES 2.0 defaults (npot/fbo/etc) instead of a half-empty state. */
+    setenv("LIBGL_NOTEST", "1", 1);
+    initialize_gl4es();
+    ac_log_line("gl4es initialized (LIBGL_NOTEST=1, ES2 defaults)");
 }
 
-/* Engine's console paste path calls mac_pasteconsole() under __APPLE__
-   with C++ linkage (declared inside console.cpp). Provide it via SDL's
-   clipboard API (works via UIPasteboard on iOS). Must NOT be extern "C". */
+/* Engine's console paste path calls mac_pasteconsole() with C++ linkage. */
 void mac_pasteconsole(char *dst)
 {
     const char *txt = SDL_GetClipboardText();
@@ -105,12 +73,9 @@ void mac_pasteconsole(char *dst)
     }
 }
 
-/* weak: if SDL2's static lib already provides main() for UIKit, that one wins */
+/* weak: SDL2's static lib may supply its own UIKit main() */
 __attribute__((weak))
 int main(int argc, char **argv)
 {
-    ac_log("main() entered, argc=%d\n", argc);
-    int r = SDL_UIKitRunApp(argc, argv, SDL_main);
-    ac_log("SDL_UIKitRunApp returned %d\n", r);
-    return r;
+    return SDL_UIKitRunApp(argc, argv, SDL_main);
 }
