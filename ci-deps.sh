@@ -17,10 +17,12 @@ if [ ! -f gl4es/lib/.ios-init-guard ]; then
   [ -d gl4es ] || git clone --depth 1 https://github.com/ptitSeb/gl4es.git gl4es
   # Apple clang rejects the alias attribute
   perl -pi -e 's{#ifdef __GNUC__}{#if defined(__GNUC__) && !defined(__APPLE__)}' gl4es/src/gl/attributes.h
-  # Apple builds have NO init constructor (NO_INIT_CONSTRUCTOR in src/gl/init.c) and
-  # skip glx.c/fb.c; do not probe the GL viewport before any context exists --
-  # main.m calls initialize_gl4es() itself with LIBGL_NOTEST defaults.
+  # Apple builds have NO init constructor (NO_INIT_CONSTRUCTOR in src/gl/init.c) and skip
+  # glx.c/fb.c; so (a) never query GL state before a context exists and (b) let the
+  # app (ios/main.m) call initialize_gl4es() itself with LIBGL_NOTEST defaults.
+  perl -pi -e 's{#if defined\(AMIGAOS4\) \|\| defined\(__EMSCRIPTEN__\)}{#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)}g' gl4es/src/gl/glstate.c
   perl -pi -e 's{if\(new_glstate && \(newstate->raster\.viewport\.width==0}{if(0 && new_glstate && (newstate->raster.viewport.width==0}' gl4es/src/gl/glstate.c
+  grep -n "defined(__APPLE__)" gl4es/src/gl/glstate.c || true
   grep -n "if(0 && new_glstate" gl4es/src/gl/glstate.c || true
   rm -rf gl4es-build gl4es/lib
   $CM -S gl4es -B gl4es-build -DCMAKE_BUILD_TYPE=Release \
