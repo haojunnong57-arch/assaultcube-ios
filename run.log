@@ -1,4 +1,4 @@
-=== run 43808045763 Mon Nov 16 05:06:15 UTC 2026 ===
+=== run 43808158130 Mon Nov 16 05:07:17 UTC 2026 ===
 ========== STEP: Toolchain ==========
 Xcode 26.6
 Build version 17F113
@@ -508,7 +508,7 @@ Cloning into 'sdl'...
 -- 
 -- Performing Test COMPILER_SUPPORTS_FOBJC_ARC
 -- Performing Test COMPILER_SUPPORTS_FOBJC_ARC - Success
--- Configuring done (462.1s)
+-- Configuring done (395.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build
 Command line invocation:
@@ -554,27 +554,27 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x objective-c -c /dev/null
 
-Build description signature: 451cc4e6b10fe2cca01b2ac4d4d9b143
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/XCBuildData/451cc4e6b10fe2cca01b2ac4d4d9b143.xcbuilddata
-CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
-    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos
-
+Build description signature: d1a051353fe146b300a6c729de0e92f2
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/XCBuildData/d1a051353fe146b300a6c729de0e92f2.xcbuilddata
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build
+
+CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
+    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos
 
 ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
 
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FD7050F39D0E83F517149C60.sh (in target 'sdl_headers_copy' from project 'SDL2')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FD7050F39D0E83F517149C60.sh
-
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FABAA124FE1B32056E2A660D.sh (in target 'sdl_headers_copy' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FABAA124FE1B32056E2A660D.sh
+
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FD7050F39D0E83F517149C60.sh (in target 'sdl_headers_copy' from project 'SDL2')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FD7050F39D0E83F517149C60.sh
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-FA73BC196F30A3C6A461C39E.sh (in target 'sdl_headers_copy' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
@@ -884,11 +884,6 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/ZERO_CHECK.build/Script-16AC2E91048D99B2C7E8C82B.sh
 
-PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/ZERO_CHECK.build/Script-16AC2E91048D99B2C7E8C82B.sh (in target 'ZERO_CHECK' from project 'SDL2')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
-    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/ZERO_CHECK.build/Script-16AC2E91048D99B2C7E8C82B.sh
-make: `/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/CMakeFiles/cmake.check_cache' is up to date.
-
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SwiftExplicitPrecompiledModules
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SwiftExplicitPrecompiledModules
@@ -900,6 +895,11 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/Release-iphoneos
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/Release-iphoneos
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/ZERO_CHECK.build/Script-16AC2E91048D99B2C7E8C82B.sh (in target 'ZERO_CHECK' from project 'SDL2')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
+    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/ZERO_CHECK.build/Script-16AC2E91048D99B2C7E8C82B.sh
+make: `/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/CMakeFiles/cmake.check_cache' is up to date.
 
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/ExplicitPrecompiledModules
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/SDL2.xcodeproj
@@ -1260,12 +1260,12 @@ PhaseScriptExecution Generate\ CMakeFiles/sdl_headers_copy /Users/runner/work/as
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
     /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2.build/Release-iphoneos/sdl_headers_copy.build/Script-95D1A4CC2163AEA1D5E58D57.sh
 
-CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/main/uikit/SDL_uikit_main.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2main' from project 'SDL2')
+CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_sse.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
     
-    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
     
-    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/main/uikit/SDL_uikit_main.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.o
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs -Wno-error\=deprecated-declarations @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_sse.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.o
 
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_std.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_std.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
@@ -1274,13 +1274,6 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2
     
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs -Wno-error\=deprecated-declarations @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_std.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_std.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_std.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_std.o
 
-CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_sse.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
-    
-    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
-    
-    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs -Wno-error\=deprecated-declarations @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_sse.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_sse.o
-
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_lsx.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_lsx.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
     
@@ -1288,9 +1281,12 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2
     
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs -Wno-error\=deprecated-declarations @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_lsx.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_lsx.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/video/yuv2rgb/yuv_rgb_lsx.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/yuv_rgb_lsx.o
 
-Libtool /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos/libSDL2main.a normal (in target 'SDL2main' from project 'SDL2')
+CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/main/uikit/SDL_uikit_main.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2main' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
-    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -L/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos -filelist /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL2main.LinkFileList -dependency_info /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL2main_libtool_dependency_info.dat -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos/libSDL2main.a
+    
+    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/main/uikit/SDL_uikit_main.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL_uikit_main.o
 
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/s_tan.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/libm/s_tan.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
@@ -1305,6 +1301,10 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2
     Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
     
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs -Wno-error\=deprecated-declarations @/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/s_sin.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/s_sin.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/libm/s_sin.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/s_sin.o
+
+Libtool /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos/libSDL2main.a normal (in target 'SDL2main' from project 'SDL2')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -L/Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos -filelist /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL2main.LinkFileList -dependency_info /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2main.build/Release-iphoneos/Objects-normal/arm64/SDL2main_libtool_dependency_info.dat -o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/Release-iphoneos/libSDL2main.a
 
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl-build/build/SDL2-static.build/Release-iphoneos/Objects-normal/arm64/s_scalbn.o /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl/src/libm/s_scalbn.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2-static' from project 'SDL2')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl
@@ -4842,6 +4842,12 @@ note: Run script build phase 'Generate CMakeFiles/ALL_BUILD' will be run during 
 -- Installing: /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/share/aclocal/sdl2.m4
 == GL4ES (static, iOS: NOX11+NOEGL+NO_LOADER like Android)
 Cloning into 'gl4es'...
+67:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
+402:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
+410:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
+457:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
+464:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
+631:#if defined(AMIGAOS4) || defined(__EMSCRIPTEN__) || defined(__APPLE__)
 634:    if(0 && new_glstate && (newstate->raster.viewport.width==0 || newstate->raster.viewport.height==0)) {
 -- The C compiler identification is AppleClang 21.0.0.21000101
 -- Detecting C compiler ABI info
@@ -4856,7 +4862,7 @@ Cloning into 'gl4es'...
 -- Performing Test SUPPORTS_UNWIND_TABLES
 -- Performing Test SUPPORTS_UNWIND_TABLES - Success
 -- Not on Linux: building without GLX support.
--- Configuring done (8.6s)
+-- Configuring done (8.8s)
 -- Generating done (0.0s)
 CMake Warning (unused-cli):
   Manually-specified variables were not used by the project:
@@ -4883,8 +4889,8 @@ ComputeTargetDependencyGraph
 note: Building targets in dependency order
 note: Target dependency graph (3 targets)
     Target 'ALL_BUILD' in project 'gl4es'
-        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'gl4es'
         ➜ Explicit dependency on target 'GL' in project 'gl4es'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'gl4es'
     Target 'GL' in project 'gl4es'
         ➜ Explicit dependency on target 'ZERO_CHECK' in project 'gl4es'
     Target 'ZERO_CHECK' in project 'gl4es' (no dependencies)
@@ -4899,19 +4905,19 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: 3e93b39499166904a76a9a0c98b1635c
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/XCBuildData/3e93b39499166904a76a9a0c98b1635c.xcbuilddata
+Build description signature: 1c5ac7e7521884ff054a87d8892ff44d
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/XCBuildData/1c5ac7e7521884ff054a87d8892ff44d.xcbuilddata
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/gl4es.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build
 
-CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/lib/Release
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/gl4es.xcodeproj
-    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/lib/Release
-
 ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/gl4es.xcodeproj
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/lib/Release
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/gl4es.xcodeproj
+    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/lib/Release
 
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/SwiftExplicitPrecompiledModules
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/gl4es.xcodeproj
@@ -4959,22 +4965,6 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-buil
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/gl4es.build/Release-iphoneos/ALL_BUILD.build/Script-A2810C117A924EC7AED2AD78.sh
 
-CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'GL' from project 'gl4es')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es
-    
-    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
-    
-    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.o
-In file included from /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c:14:
-/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/loader.h:112:9: warning: 'NO_LOADER' macro redefined [-Wmacro-redefined]
-  112 | #define NO_LOADER
-      |         ^
-In file included from <built-in>:464:
-<command line>:8:9: note: previous definition is here
-    8 | #define NO_LOADER 1
-      |         ^
-1 warning generated.
-
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/uniform.o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/uniform.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'GL' from project 'gl4es')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es
     
@@ -4997,6 +4987,22 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL
     Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
     
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/vertexattrib.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/vertexattrib.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/vertexattrib.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/vertexattrib.o
+
+CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'GL' from project 'gl4es')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es
+    
+    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_read.o
+In file included from /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_read.c:14:
+/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/loader.h:112:9: warning: 'NO_LOADER' macro redefined [-Wmacro-redefined]
+  112 | #define NO_LOADER
+      |         ^
+In file included from <built-in>:464:
+<command line>:8:9: note: previous definition is here
+    8 | #define NO_LOADER 1
+      |         ^
+1 warning generated.
 
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es-build/build/GL.build/Release-iphoneos/Objects-normal/arm64/texture_params.o /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/texture_params.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'GL' from project 'gl4es')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es
@@ -5656,7 +5662,8 @@ In file included from <built-in>:464:
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/listdraw.c:1146:110: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
  1146 |                         modeinit_t tmp; tmp.mode_init = list->mode_init; tmp.ilen=list->ilen; tmp.vlen=list->len;
       |                                                                                                       ~~~~~~~^~~
-/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/listdraw.c:1147:166: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/listdraw.c:1147
+:166: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
  1147 |                         int ef_k = list->edgeflag ? build_lineIndices_edgeflag(list->mode_inits?list->mode_inits:&tmp, list->mode_inits?list->mode_init_len:1, list->len, list->edgeflag, list->ind_lines) : -1;
       |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                 ~~~~~~^~~
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/listdraw.c:1176:57: warning: implicit conversion loses integer precision: 'unsigned long' to 'GLsizei' (aka 'int') [-Wshorten-64-to-32]
@@ -5747,7 +5754,8 @@ In file included from <built-in>:464:
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:498:45: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
   498 |                 renderlist_createindices(a->len, newind, 0);
       |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~^~~
-/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:520:80: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+/Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:520:80: warning: implicit conversion loses integer precision: 'unsigned long' to 'in
+t' [-Wshorten-64-to-32]
   520 |             renderlist_lineloop_lines(indices, count, a->indices + a->ilen, a->len);
       |             ~~~~~~~~~~~~~~~~~~~~~~~~~                                       ~~~^~~
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:523:81: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
@@ -5778,8 +5786,7 @@ In file included from <built-in>:464:
   562 |     redim_renderlist(a, cap);
       |     ~~~~~~~~~~~~~~~~    ^~~
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:563:60: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
-  563 |     unsharedindices_renderl
-ist(a, ((ilen_a)?ilen_a:a->len) + ((ilen_b)?ilen_b:b->len));
+  563 |     unsharedindices_renderlist(a, ((ilen_a)?ilen_a:a->len) + ((ilen_b)?ilen_b:b->len));
       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
 /Users/runner/work/assaultcube-ios/assaultcube-ios/gl4es/src/gl/list.c:600:64: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
   600 |         doadd_renderlist(a, b->mode, b->indices, b->indices?b->ilen:b->len, ilen_b);
@@ -6481,7 +6488,7 @@ Cloning into 'sdl_image'...
 -- SDL2_image backends:
 -- - enabled:  stb imageio bmp gif jpg lbm pcx png pnm qoi svg tga xcf xpm xv
 -- - disabled: wic avif jxl tif webp
--- Configuring done (3.9s)
+-- Configuring done (4.6s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build
 Command line invocation:
@@ -6502,16 +6509,16 @@ ComputeTargetDependencyGraph
 note: Building targets in dependency order
 note: Target dependency graph (5 targets)
     Target 'ALL_BUILD' in project 'SDL2_image'
-        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
         ➜ Explicit dependency on target 'SDL2_image' in project 'SDL2_image'
         ➜ Explicit dependency on target 'showanim' in project 'SDL2_image'
         ➜ Explicit dependency on target 'showimage' in project 'SDL2_image'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
     Target 'showimage' in project 'SDL2_image'
-        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
         ➜ Explicit dependency on target 'SDL2_image' in project 'SDL2_image'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
     Target 'showanim' in project 'SDL2_image'
-        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
         ➜ Explicit dependency on target 'SDL2_image' in project 'SDL2_image'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
     Target 'SDL2_image' in project 'SDL2_image'
         ➜ Explicit dependency on target 'ZERO_CHECK' in project 'SDL2_image'
     Target 'ZERO_CHECK' in project 'SDL2_image' (no dependencies)
@@ -6524,14 +6531,14 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
 
-ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
-
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: b58801a3f997efa82ad1ef87daf0f016
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/XCBuildData/b58801a3f997efa82ad1ef87daf0f016.xcbuilddata
+Build description signature: fe4a0430fdc8100dcc3c2157859db60e
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/XCBuildData/fe4a0430fdc8100dcc3c2157859db60e.xcbuilddata
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/SDL2_image.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build
@@ -6851,6 +6858,10 @@ libtool: warning: 'IMG_WIC.o' has no symbols
 libtool: warning: 'IMG_tga.o' has no symbols
 libtool: warning: 'IMG_tif.o' has no symbols
 
+ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showimage.dir/Info.plist (in target 'showimage' from project 'SDL2_image')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl_image
+    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showimage.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/Info.plist
+
 Ld /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/showimage normal (in target 'showimage' from project 'SDL2_image')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl_image
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O3 -L/Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos -filelist /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/showimage.build/Release-iphoneos/Objects-normal/arm64/showimage.LinkFileList -Xlinker -dead_strip -Xlinker -dependency_info -Xlinker /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/build/showimage.build/Release-iphoneos/Objects-normal/arm64/showimage_dependency_info.dat -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/libSDL2_image.a /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/lib/libSDL2.a -lobjc -o /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/showimage
@@ -7124,9 +7135,9 @@ Undefined symbols for architecture arm64:
 ld: symbol(s) not found for architecture arm64
 /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/SDL2_image.xcodeproj: showimage: clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showimage.dir/Info.plist (in target 'showimage' from project 'SDL2_image')
+ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showanim.dir/Info.plist (in target 'showanim' from project 'SDL2_image')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl_image
-    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showimage.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showimage.app/Info.plist
+    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showanim.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/Info.plist
 
 Ld /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/showanim normal (in target 'showanim' from project 'SDL2_image')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl_image
@@ -7401,10 +7412,6 @@ Undefined symbols for architecture arm64:
 ld: symbol(s) not found for architecture arm64
 /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/SDL2_image.xcodeproj: showanim: clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showanim.dir/Info.plist (in target 'showanim' from project 'SDL2_image')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/sdl_image
-    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/CMakeFiles/showanim.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/simg-build/Release-iphoneos/showanim.app/Info.plist
-
 note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'SDL2_image')
 note: Run script build phase 'Generate CMakeFiles/ALL_BUILD' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ALL_BUILD' from project 'SDL2_image')
 ** BUILD FAILED **
@@ -7467,7 +7474,7 @@ Cloning into 'ogg'...
 -- Check size of long - done
 -- Check size of long long
 -- Check size of long long - done
--- Configuring done (35.7s)
+-- Configuring done (31.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build
 Command line invocation:
@@ -7488,8 +7495,8 @@ ComputeTargetDependencyGraph
 note: Building targets in dependency order
 note: Target dependency graph (3 targets)
     Target 'ALL_BUILD' in project 'ogg'
-        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'ogg'
         ➜ Explicit dependency on target 'ogg' in project 'ogg'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'ogg'
     Target 'ogg' in project 'ogg'
         ➜ Explicit dependency on target 'ZERO_CHECK' in project 'ogg'
     Target 'ZERO_CHECK' in project 'ogg' (no dependencies)
@@ -7504,8 +7511,8 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: ad04a9b1eddd65bce95e516b033232f2
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/XCBuildData/ad04a9b1eddd65bce95e516b033232f2.xcbuilddata
+Build description signature: 8f39716a5f5c5d87488f57d749e7eee2
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/XCBuildData/8f39716a5f5c5d87488f57d749e7eee2.xcbuilddata
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/ogg.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build
@@ -7564,6 +7571,26 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
 -fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/Release-iphoneos -DNDEBUG
 
+CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.o /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'ogg' from project 'ogg')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg
+    
+    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.o
+/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:66:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+   66 |     b->endbit=bits;
+      |              ~^~~~
+/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:77:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+   77 |     b->endbit=bits;
+      |              ~^~~~
+/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:223:49: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  223 |       w(b,(unsigned long)(ptr[bytes]>>(8-bits)),bits);
+      |       ~                                         ^~~~
+/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:225:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  225 |       w(b,(unsigned long)(ptr[bytes]),bits);
+      |       ~                               ^~~~
+4 warnings generated.
+
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/framing.o /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/framing.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'ogg' from project 'ogg')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg
     
@@ -7592,26 +7619,6 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.
   950 |   int ptr=os->lacing_returned;
       |       ~~~ ~~~~^~~~~~~~~~~~~~~
 7 warnings generated.
-
-CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.o /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'ogg' from project 'ogg')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg
-    
-    Using response file: /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
-    
-    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c -o /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/build/ogg.build/Release-iphoneos/Objects-normal/arm64/bitwise.o
-/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:66:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
-   66 |     b->endbit=bits;
-      |              ~^~~~
-/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:77:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
-   77 |     b->endbit=bits;
-      |              ~^~~~
-/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:223:49: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
-  223 |       w(b,(unsigned long)(ptr[bytes]>>(8-bits)),bits);
-      |       ~                                         ^~~~
-/Users/runner/work/assaultcube-ios/assaultcube-ios/ogg/src/bitwise.c:225:39: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
-  225 |       w(b,(unsigned long)(ptr[bytes]),bits);
-      |       ~                               ^~~~
-4 warnings generated.
 
 Libtool /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg-build/Release-iphoneos/libogg.a normal (in target 'ogg' from project 'ogg')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/ogg
@@ -7663,7 +7670,7 @@ to suppress it.
 -- Looking for floor in m
 -- Looking for floor in m - found
 -- Found Ogg: /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/lib/libogg.a (found version "1.3.6")
--- Configuring done (8.9s)
+-- Configuring done (10.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build
 Command line invocation:
@@ -7719,15 +7726,15 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
 
-Build description signature: b9f67243e8209f2ab27094bf11017ac8
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/XCBuildData/b9f67243e8209f2ab27094bf11017ac8.xcbuilddata
-CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/vorbis.xcodeproj
-    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos
-
+Build description signature: 31af5556cf89f6e5f5e76ecbd453dec4
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/XCBuildData/31af5556cf89f6e5f5e76ecbd453dec4.xcbuilddata
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/vorbis.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos
+
+CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/vorbis.xcodeproj
+    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos
 
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/vorbis.xcodeproj
@@ -7791,13 +7798,13 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-bui
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbisenc.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
 -fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/lib -isystem /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbisenc.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbisenc.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbisenc.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos -DNDEBUG
 
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyMetadataFileList (in target 'vorbis_test' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyMetadataFileList
-
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyStaticMetadataFileList (in target 'vorbis_test' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyMetadataFileList (in target 'vorbis_test' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/vorbis_test.DependencyMetadataFileList
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/Objects-normal/arm64/vorbis_test.LinkFileList (in target 'vorbis_test' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
@@ -7816,35 +7823,35 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-bui
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/vorbis.DependencyMetadataFileList
 
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/vorbis.LinkFileList (in target 'vorbis' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/vorbis.LinkFileList
+
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'vorbis' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
 -fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/lib -isystem /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos -DNDEBUG
 
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/vorbis.LinkFileList (in target 'vorbis' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/Objects-normal/arm64/vorbis.LinkFileList
-
 MkDir /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app (in target 'vorbis_test' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     /bin/mkdir -p /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app
-
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyStaticMetadataFileList (in target 'test_codebook' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyStaticMetadataFileList
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyMetadataFileList (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyMetadataFileList
 
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'test_codebook' from project 'vorbis')
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyStaticMetadataFileList (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
--fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/include -isystem /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -DNDEBUG
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/test_codebook.DependencyStaticMetadataFileList
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/test_codebook.LinkFileList (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/test_codebook.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'test_codebook' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+-fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis/include -isystem /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -DNDEBUG
 
 PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/ZERO_CHECK.build/Script-9266ADA543867DB8559D558D.sh (in target 'ZERO_CHECK' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
@@ -8694,14 +8701,14 @@ Ld /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O3 -L/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -filelist /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/test_codebook.LinkFileList -Xlinker -dead_strip -Xlinker -dependency_info -Xlinker /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/test_codebook.build/Release-iphoneos/Objects-normal/arm64/test_codebook_dependency_info.dat -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos/libvorbis.a /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/lib/libogg.a -lm -o /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app/test_codebook
 
+ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/CMakeFiles/vorbis_test.dir/Info.plist (in target 'vorbis_test' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/CMakeFiles/vorbis_test.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/Info.plist
+
 Ld /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/vorbis_test normal (in target 'vorbis_test' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O3 -L/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos -filelist /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/Objects-normal/arm64/vorbis_test.LinkFileList -Xlinker -dead_strip -Xlinker -dependency_info -Xlinker /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis_test.build/Release-iphoneos/Objects-normal/arm64/vorbis_test_dependency_info.dat -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos/libvorbisenc.a -lm /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/lib/Release-iphoneos/libvorbis.a -lm /Users/runner/work/assaultcube-ios/assaultcube-ios/prefix/lib/libogg.a -o /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/vorbis_test
 /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/vorbis.xcodeproj: vorbis_test: ld: warning: ignoring duplicate libraries: '-lm'
-
-ProcessInfoPlistFile /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/Info.plist /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/CMakeFiles/vorbis_test.dir/Info.plist (in target 'vorbis_test' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    builtin-infoPlistUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/CMakeFiles/vorbis_test.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app/Info.plist
 
 RegisterExecutionPolicyException /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
@@ -8711,21 +8718,21 @@ RegisterExecutionPolicyException /Users/runner/work/assaultcube-ios/assaultcube-
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     builtin-RegisterExecutionPolicyException /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app
 
-Validate /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app (in target 'vorbis_test' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    builtin-validationUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app -shallow-bundle -infoplist-subpath Info.plist
-
 Validate /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     builtin-validationUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app -shallow-bundle -infoplist-subpath Info.plist
 
-Touch /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app (in target 'vorbis_test' from project 'vorbis')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
-    /usr/bin/touch -c /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app
-
 Touch /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app (in target 'test_codebook' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
     /usr/bin/touch -c /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/test_codebook.app
+
+Validate /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app (in target 'vorbis_test' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    builtin-validationUtility /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app (in target 'vorbis_test' from project 'vorbis')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
+    /usr/bin/touch -c /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/test/Release-iphoneos/vorbis_test.app
 
 PhaseScriptExecution Generate\ CMakeFiles/ALL_BUILD /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis-build/build/vorbis.build/Release-iphoneos/ALL_BUILD.build/Script-C9F9F0F6BF574EB41086927C.sh (in target 'ALL_BUILD' from project 'vorbis')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/vorbis
@@ -8865,7 +8872,7 @@ C++20 modules not supported with Xcode on CMake 4.4.5
 -- Installing HRTF data files
 -- Installing AmbDec presets
 -- 
--- Configuring done (79.9s)
+-- Configuring done (89.7s)
 -- Generating done (0.1s)
 -- Build files have been written to: /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build
 Command line invocation:
@@ -8912,8 +8919,12 @@ ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/X
 
 ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
 
-Build description signature: 553492f57def030ddfd8d519aa717992
-Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/XCBuildData/553492f57def030ddfd8d519aa717992.xcbuilddata
+Build description signature: a5301eaf0f0f9dd84308e4962aa1366d
+Build description path: /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/XCBuildData/a5301eaf0f0f9dd84308e4962aa1366d.xcbuilddata
+CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
+    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build
+
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/Release-iphoneos
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
     builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/Release-iphoneos
@@ -8921,18 +8932,6 @@ CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-buil
 ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
-
-CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
-    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build
-
-WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh (in target 'ZERO_CHECK' from project 'OpenAL')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
-    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh
-
-CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
-    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7FA9FE35AD46D3F6CAE34EAF.sh (in target 'alsoft.default_hrtf_data' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
@@ -8950,14 +8949,22 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-036DE180D87AFEED602576E9.sh
 
-PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh (in target 'ZERO_CHECK' from project 'OpenAL')
+WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh (in target 'ZERO_CHECK' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
-    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh
-make: `/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/CMakeFiles/cmake.check_cache' is up to date.
+    write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh
+
+CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
+    builtin-create-build-directory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos
 
 WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ALL_BUILD.build/Script-0EE94B581DF25A04A515912C.sh (in target 'ALL_BUILD' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ALL_BUILD.build/Script-0EE94B581DF25A04A515912C.sh
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh (in target 'ZERO_CHECK' from project 'OpenAL')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
+    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ZERO_CHECK.build/Script-154E2FFABEAC2C7115D31560.sh
+make: `/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/CMakeFiles/cmake.check_cache' is up to date.
 
 CreateBuildDirectory /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/SwiftExplicitPrecompiledModules
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/OpenAL.xcodeproj
@@ -9009,18 +9016,6 @@ WriteAuxiliaryFile /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/
     write-file /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
 -fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphoneos"' -DAL_LIBTYPE_STATIC -DAL_BUILD_LIBRARY -DAL_ALEXT_PROTOTYPES '-DALC_API=' '-DAL_API=' '-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_FAST' -I/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/Release-iphoneos/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft -I/Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/gsl/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build -I/Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/common -I/Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/fmt-11.2.0/include -I/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/DerivedSources-normal/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/DerivedSources/arm64 -I/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/DerivedSources -F/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/Release-iphoneos -F/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks -DNDEBUG '-std=gnu++20' '-ftrivial-auto-var-init=pattern' -fno-math-errno
 
-PhaseScriptExecution Generate\ default_hrtf.hpp /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7EF25D2249051EDFFFF72891.sh (in target 'alsoft.default_hrtf_data' from project 'OpenAL')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
-    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7EF25D2249051EDFFFF72891.sh
-
-PhaseScriptExecution Generate\ version.h /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-036DE180D87AFEED602576E9.sh (in target 'alsoft.build_version' from project 'OpenAL')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
-    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-036DE180D87AFEED602576E9.sh
-
-PhaseScriptExecution Generate\ CMakeFiles/alsoft.build_version /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-6E97F488D06EC742BA21ECBD.sh (in target 'alsoft.build_version' from project 'OpenAL')
-    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
-    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-6E97F488D06EC742BA21ECBD.sh
-
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos/Objects-normal/arm64/os.o /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/fmt-11.2.0/src/os.cc normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'alsoft.fmt' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
     
@@ -9035,9 +9030,21 @@ CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/also
     
     /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/C/com.apple.DeveloperTools/26.6-17F113/Xcode/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -target arm64-apple-ios17.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body @/Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp -MMD -MT dependencies -MF /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos/Objects-normal/arm64/format.d --serialize-diagnostics /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos/Objects-normal/arm64/format.dia -c /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/fmt-11.2.0/src/format.cc -o /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/alsoft.fmt.build/Release-iphoneos/Objects-normal/arm64/format.o
 
+PhaseScriptExecution Generate\ default_hrtf.hpp /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7EF25D2249051EDFFFF72891.sh (in target 'alsoft.default_hrtf_data' from project 'OpenAL')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
+    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7EF25D2249051EDFFFF72891.sh
+
+PhaseScriptExecution Generate\ version.h /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-036DE180D87AFEED602576E9.sh (in target 'alsoft.build_version' from project 'OpenAL')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
+    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-036DE180D87AFEED602576E9.sh
+
 PhaseScriptExecution Generate\ CMakeFiles/alsoft.default_hrtf_data /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7FA9FE35AD46D3F6CAE34EAF.sh (in target 'alsoft.default_hrtf_data' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
     /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.default_hrtf_data.build/Script-7FA9FE35AD46D3F6CAE34EAF.sh
+
+PhaseScriptExecution Generate\ CMakeFiles/alsoft.build_version /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-6E97F488D06EC742BA21ECBD.sh (in target 'alsoft.build_version' from project 'OpenAL')
+    cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
+    /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/alsoft.build_version.build/Script-6E97F488D06EC742BA21ECBD.sh
 
 CompileC /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/Objects-normal/arm64/wave.o /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft/alc/backends/wave.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'OpenAL' from project 'OpenAL')
     cd /Users/runner/work/assaultcube-ios/assaultcube-ios/openal-soft
@@ -9690,9 +9697,9 @@ PhaseScriptExecution Generate\ CMakeFiles/ALL_BUILD /Users/runner/work/assaultcu
     /bin/sh -c /Users/runner/work/assaultcube-ios/assaultcube-ios/oal-build/build/OpenAL.build/Release-iphoneos/ALL_BUILD.build/Script-0EE94B581DF25A04A515912C.sh
 Build all projects
 
-note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'OpenAL')
 note: Run script build phase 'Generate CMakeFiles/alsoft.default_hrtf_data' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'alsoft.default_hrtf_data' from project 'OpenAL')
 note: Run script build phase 'Generate CMakeFiles/alsoft.build_version' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'alsoft.build_version' from project 'OpenAL')
+note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'OpenAL')
 note: Run script build phase 'Generate CMakeFiles/ALL_BUILD' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ALL_BUILD' from project 'OpenAL')
 ** BUILD SUCCEEDED **
 
@@ -9721,7 +9728,7 @@ note: Run script build phase 'Generate CMakeFiles/ALL_BUILD' will be run during 
 deps ready
 -rw-r--r--  1 runner  staff   2.1M Nov 16 05:14 gl4es/lib/libGL.a
 -rw-r--r--  1 runner  staff    28K Nov 16 05:15 prefix/lib/libogg.a
--rw-r--r--  1 runner  staff   3.6M Nov 16 05:17 prefix/lib/libopenal.a
+-rw-r--r--  1 runner  staff   3.6M Nov 16 05:18 prefix/lib/libopenal.a
 -rw-r--r--  1 runner  staff   248K Nov 16 05:14 prefix/lib/libSDL2_image.a
 -rw-r--r--  1 runner  staff   2.1M Nov 16 05:14 prefix/lib/libSDL2.a
 -rw-r--r--  1 runner  staff   808B Nov 16 05:14 prefix/lib/libSDL2main.a
@@ -9731,6 +9738,7 @@ deps ready
 EXIT_CODE=0
 ========== STEP: Engine ==========
 Cloning into 'upstream'...
+Updating files:  82% (2023/2450)Updating files:  83% (2034/2450)Updating files:  84% (2058/2450)Updating files:  85% (2083/2450)Updating files:  86% (2107/2450)Updating files:  87% (2132/2450)Updating files:  88% (2156/2450)Updating files:  89% (2181/2450)Updating files:  90% (2205/2450)Updating files:  91% (2230/2450)Updating files:  92% (2254/2450)Updating files:  93% (2279/2450)Updating files:  94% (2303/2450)Updating files:  95% (2328/2450)Updating files:  96% (2352/2450)Updating files:  97% (2377/2450)Updating files:  98% (2401/2450)Updating files:  99% (2426/2450)Updating files: 100% (2450/2450)Updating files: 100% (2450/2450), done.
 --- patched sources ---
 18:const char *absbasedir =
 19-#ifdef __ANDROID__
@@ -9742,25 +9750,25 @@ Cloning into 'upstream'...
 [CXX] audiomanager
 [CXX] autodownload
 [CXX] client
-In file included from upstream/source/src/crypto.cpp:1:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/autodownload.cpp:4:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/crypto.cppIn file included from :upstream/source/src/audiomanager.cpp1::
+3In file included from :
+upstream/source/src/cube.hIn file included from :upstream/source/src/cube.h4::
+4upstream/source/src/platform.h:
+:upstream/source/src/platform.h60::6018::18 :warning:  non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]warning: 
+non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+      6060 |  |                 ##iinncclluuddee  ""VVoorrbbiiss//vvoorrbbiissffiillee..hh""
+
+            | |                  ^~~~~~~~~~~~~~~~~~~~~                 ^~~~~~~~~~~~~~~~~~~~~
+
+            | |                  "vorbis/vorbisfile.h"                 "vorbis/vorbisfile.h"
+
 In file included from upstream/source/src/client.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/audiomanager.cpp:3:
+In file included from upstream/source/src/autodownload.cpp:4:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -9862,15 +9870,6 @@ upstream/source/src/audiomanager.cpp:291:16: warning: 'alcCloseDevice' is deprec
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:212:38: note: 'alcCloseDevice' has been explicitly marked deprecated here
   212 | ALC_API ALCboolean      ALC_APIENTRY alcCloseDevice( ALCdevice *device ) OPENAL_DEPRECATED;
       |                                      ^
-upstream/source/src/crypto.cpp:1280:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
- 1280 |     sprintf(signedmsg, "%s%s\n", certheader, bin2hex(hextemp, msgbuf, 64));   // header line
-      |     ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
 upstream/source/src/audiomanager.cpp:585:5: warning: 'alcSuspendContext' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
   585 |     alcSuspendContext(context); // don't process sounds while we mess around
       |     ^
@@ -9895,6 +9894,15 @@ upstream/source/src/audiomanager.cpp:687:5: warning: 'alcProcessContext' is depr
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h:196:38: note: 'alcProcessContext' has been explicitly marked deprecated here
   196 | ALC_API void            ALC_APIENTRY alcProcessContext( ALCcontext *context ) OPENAL_DEPRECATED;
       |                                      ^
+upstream/source/src/crypto.cpp:1280:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1280 |     sprintf(signedmsg, "%s%s\n", certheader, bin2hex(hextemp, msgbuf, 64));   // header line
+      |     ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
 1 warning generated.
 1 warning generated.
 21 warnings generated.
@@ -9903,13 +9911,13 @@ upstream/source/src/audiomanager.cpp:687:5: warning: 'alcProcessContext' is depr
 [CXX] clients2c
 [CXX] command
 [CXX] console
-In file included from upstream/source/src/clients2c.cpp:3:
+In file included from upstream/source/src/clientgame.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/clientgame.cpp:3:
+In file included from upstream/source/src/clients2c.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -9921,6 +9929,18 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+upstream/source/src/clientgame.cpp:1629:29: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1629 |             string nm = ""; itoa(nm, nextmode);
+      |                             ^
+upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
+  796 | #define itoa(s, i) sprintf(s, "%d", i)
+      |                    ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
 upstream/source/src/clients2c.cpp:1272:25: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1272 |                         itoa(a1, mode);
       |                         ^
@@ -10005,18 +10025,12 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
-upstream/source/src/clientgame.cpp:1629:29: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
- 1629 |             string nm = ""; itoa(nm, nextmode);
-      |                             ^
-upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
-  796 | #define itoa(s, i) sprintf(s, "%d", i)
-      |                    ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
-  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
-      | ^
-/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
-  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
-      |                                                       ^
+In file included from upstream/source/src/console.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 upstream/source/src/command.cpp:1044:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1044 |             itoa(id->action, i+1);
       |             ^
@@ -10029,12 +10043,6 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
-In file included from upstream/source/src/console.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 upstream/source/src/command.cpp:1365:38: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
  1365 |         case ID_SVAR:  { string str; itoa(str, val); *id->storage.s = exchangestr(*id->storage.s, str); break; }
       |                                      ^
@@ -10099,13 +10107,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 [CXX] main
 [CXX] menus
 [CXX] touch/touch
-In file included from upstream/source/src/main.cpp:3:
+In file included from upstream/source/src/log.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/log.cpp:3:
+In file included from upstream/source/src/main.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10262,12 +10270,12 @@ upstream/source/src/oggstream.cpp:75:9: warning: 'alDeleteBuffers' is deprecated
       |                         ^
 In file included from upstream/source/src/packetqueue.cpp:3:
 In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-upstream/source/src/oggstream.cpp:174:9: warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  174 |         alBufferData(bufid, format, pcm, size, info->rate);
+upstream/source/src/platform.h:60:upstream/source/src/oggstream.cpp18::174 :warning: 9non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]:
+ warning: 'alBufferData' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]   
+60   | 174  |               # ianlcBluufdfee r"DVaotrab(ibsu/fviodr,b ifsofrimlaet.,h "p
+c      m| ,                 ^~~~~~~~~~~~~~~~~~~~~ 
+s      i| z                 "vorbis/vorbisfile.h"e
+, info->rate);
       |         ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:600:25: note: 'alBufferData' has been explicitly marked deprecated here
   600 | AL_API void AL_APIENTRY alBufferData( ALuint bid, ALenum format, const ALvoid* data, ALsizei size, ALsizei freq ) OPENAL_DEPRECATED;
@@ -10290,12 +10298,6 @@ upstream/source/src/oggstream.cpp:195:20: warning: 'alSourceQueueBuffers' is dep
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:571:25: note: 'alSourceQueueBuffers' has been explicitly marked deprecated here
   571 | AL_API void AL_APIENTRY alSourceQueueBuffers( ALuint sid, ALsizei numEntries, const ALuint *bids ) OPENAL_DEPRECATED;
       |                         ^
-In file included from upstream/source/src/physics.cpp:6:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 upstream/source/src/openal.cpp:15:22: warning: 'alIsSource' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
    15 |     ASSERT(!valid || alIsSource(id));
       |                      ^
@@ -10422,8 +10424,14 @@ upstream/source/src/openal.cpp:204:5: warning: 'alGetSourcef' is deprecated: fir
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:523:25: note: 'alGetSourcef' has been explicitly marked deprecated here
   523 | AL_API void AL_APIENTRY alGetSourcef( ALuint sid, ALenum param, ALfloat* value ) OPENAL_DEPRECATED;
       |                         ^
-upstream/source/src/openal.cpp:219:5: warning: 'alSourcePlay' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
-  219 |     alSourcePlay(id);
+In file included from upstream/source/src/physics.cpp:6:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #includupstream/source/src/openal.cppe: 219":V5o:r bwarning: i'alSourcePlay' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]s
+/  v219o | r b i s faillSeo.uhr"c
+e      P| l                 ^~~~~~~~~~~~~~~~~~~~~a
+y      (| i                 "vorbis/vorbisfile.h"d
+);
       |     ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:557:25: note: 'alSourcePlay' has been explicitly marked deprecated here
   557 | AL_API void AL_APIENTRY alSourcePlay( ALuint sid ) OPENAL_DEPRECATED;
@@ -10476,6 +10484,7 @@ upstream/source/src/openal.cpp:357:24: warning: 'alDeleteBuffers' is deprecated:
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:594:25: note: 'alDeleteBuffers' has been explicitly marked deprecated here
   594 | AL_API void AL_APIENTRY alDeleteBuffers( ALsizei n, const ALuint* buffers ) OPENAL_DEPRECATED;
       |                         ^
+9 warnings generated.
 upstream/source/src/openal.cpp:383:5: warning: 'alGetError' is deprecated: first deprecated in iOS 13.0 - OpenAL is deprecated in favor of AVAudioEngine [-Wdeprecated-declarations]
   383 |     alGetError();
       |     ^
@@ -10488,7 +10497,6 @@ upstream/source/src/openal.cpp:388:17: warning: 'alGetError' is deprecated: firs
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h:404:27: note: 'alGetError' has been explicitly marked deprecated here
   404 | AL_API ALenum AL_APIENTRY alGetError( void ) OPENAL_DEPRECATED;
       |                           ^
-9 warnings generated.
 1 warning generated.
 33 warnings generated.
 1 warning generated.
@@ -10496,25 +10504,25 @@ upstream/source/src/openal.cpp:388:17: warning: 'alGetError' is deprecated: firs
 [CXX] rendercubes
 [CXX] rendergl
 [CXX] renderhud
-In file included from upstream/source/src/rendercubes.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/protocol.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/renderhud.cpp:3:
+In file included from upstream/source/src/rendercubes.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/rendergl.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+In file included from upstream/source/src/renderhud.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10589,12 +10597,6 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/serverbrowser.cpp:3:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
 upstream/source/src/scoreboard.cpp:546:14: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
   546 |         else itoa(winners, sort < 0 ? 0 : 1);
       |              ^
@@ -10607,6 +10609,12 @@ upstream/source/src/tools.h:796:20: note: expanded from macro 'itoa'
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
+In file included from upstream/source/src/serverbrowser.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 1 warning generated.
 2 warnings generated.
 1 warning generated.
@@ -10639,13 +10647,12 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-1 warning generated.
-1 warning generated.
 upstream/source/src/stream.cpp:326:16: warning: 'readdir_r' is deprecated: This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead. [-Wdeprecated-declarations]
   326 |         while(!readdir_r(d, &b, &de) && de != NULL)
       |                ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/dirent.h:114:1: note: 'readdir_r' has been explicitly marked deprecated here
-  114 | __deprecated_msg("This function cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead.")
+  114 | __deprecated_msg("This fu1n warningc generatedt.
+ion cannot be used safely as it does not take into account the variability of {NAME_MAX}.  It is highly recommended that you use readdir(3) instead.")
       | ^
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
@@ -10660,11 +10667,18 @@ upstream/source/src/stream.cpp:397:16: warning: 'readdir_r' is deprecated: This 
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
 1 warning generated.
+1 warning generated.
 3 warnings generated.
 [CXX] texture
 [CXX] tools
 [CXX] water
 [CXX] weapon
+In file included from upstream/source/src/texture.cpp:3:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/tools.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -10672,12 +10686,6 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
 In file included from upstream/source/src/water.cpp:1:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfile.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"In file included from 
-upstream/source/src/texture.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10706,7 +10714,7 @@ upstream/source/src/weapon.cpp:1348:5: warning: 'sprintf' is deprecated: This fu
 [CXX] world
 [CXX] worldio
 [CXX] worldlight
-In file included from upstream/source/src/worldio.cpp:3:
+In file included from upstream/source/src/wizard.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10718,12 +10726,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/wizard.cpp:3:
+In file included from upstream/source/src/worldio.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+1 warning generated.
 In file included from upstream/source/src/worldlight.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
@@ -10733,12 +10742,11 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 1 warning generated.
 1 warning generated.
 1 warning generated.
-1 warning generated.
 [CXX] worldocull
 [CXX] worldrender
 [CXX] zip
 [CXX] bot/bot
-In file included from upstream/source/src/bot/bot.cpp:13:
+In file included from upstream/source/src/worldocull.cpp:3:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10756,13 +10764,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/worldocull.cpp:3:
+1 warning generated.
+In file included from upstream/source/src/bot/bot.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-1 warning generated.
 1 warning generated.
 1 warning generated.
 1 warning generated.
@@ -10770,19 +10778,13 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
 [CXX] bot/bot_ai
 [CXX] bot/bot_util
 [CXX] bot/bot_waypoint
-In file included from upstream/source/src/bot/bot_ai.cpp:13:
-In file included from upstream/source/src/cube.h:4:
-upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   60 |         #include "Vorbis/vorbisfileIn file included from upstream/source/src/bot/botmanager.cpp:13:
+In file included from upstream/source/src/bot/botmanager.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
-.h"
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-      |                  "vorbis/vorbisfile.h"
-In file included from upstream/source/src/bot/bot_waypoint.cpp:10:
+In file included from upstream/source/src/bot/bot_ai.cpp:13:
 In file included from upstream/source/src/cube.h:4:
 upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
    60 |         #include "Vorbis/vorbisfile.h"
@@ -10794,6 +10796,19 @@ upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbi
    60 |         #include "Vorbis/vorbisfile.h"
       |                  ^~~~~~~~~~~~~~~~~~~~~
       |                  "vorbis/vorbisfile.h"
+upstream/source/src/bot/bot_util.cpp:98:41: warning: implicit conversion from 'long' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+   98 |      return (from + (float) lrand () / (LRAND_MAX / (to - from)));
+      |                                         ^~~~~~~~~ ~
+upstream/source/src/bot/bot_util.cpp:25:19: note: expanded from macro 'LRAND_MAX'
+   25 | #define LRAND_MAX 2147483647L
+      |                   ^~~~~~~~~~~
+In file included from upstream/source/src/bot/bot_waypoint.cpp:10:
+In file included from upstream/source/src/cube.h:4:
+upstream/source/src/platform.h:60:18: warning: non-portable path to file '"vorbis/vorbisfile.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   60 |         #include "Vorbis/vorbisfile.h"
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+      |                  "vorbis/vorbisfile.h"
+2 warnings generated.
 upstream/source/src/bot/bot_waypoint.cpp:582:16: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
   582 |                sprintf(szWPInfo, "Distance nearest waypoint: %f", GetDistance(player1->o, nearestwp->v_origin));
       |                ^
@@ -10821,13 +10836,6 @@ upstream/source/src/bot/bot_waypoint.cpp:608:16: warning: 'sprintf' is deprecate
 /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
   227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
       |                                                       ^
-upstream/source/src/bot/bot_util.cpp:98:41: warning: implicit conversion from 'long' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
-   98 |      return (from + (float) lrand () / (LRAND_MAX / (to - from)));
-      |                                         ^~~~~~~~~ ~
-upstream/source/src/bot/bot_util.cpp:25:19: note: expanded from macro 'LRAND_MAX'
-   25 | #define LRAND_MAX 2147483647L
-      |                   ^~~~~~~~~~~
-2 warnings generated.
 1 warning generated.
 1 warning generated.
 4 warnings generated.
